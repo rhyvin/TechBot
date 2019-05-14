@@ -28,10 +28,10 @@ public class Bot {
         EmbedUtils.setEmbedBuilder(
                 () -> new EmbedBuilder()
                         .setColor(getRandomColor())
-                        .setFooter("{TechnoAnomaly}", null)
+                        .setFooter("Techno Anomaly", null)
                         .setTimestamp(Instant.now())
-        );
 
+        );
 
         try {
             logger.info("Booting");

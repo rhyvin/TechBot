@@ -1,4 +1,4 @@
-package ta.commands;
+package ta.commands.Fun;
 
 import me.duncte123.botcommons.messaging.EmbedUtils;
 import me.duncte123.botcommons.web.WebUtils;
@@ -20,19 +20,13 @@ public class MemeCMD  implements IntCommand {
 
     @Override
     public void handle(List<String> args, GuildMessageReceivedEvent event) {
-        WebUtils.ins.getJSONObject("https://api-to.get-a.life/meme").async( (json) -> {
+        WebUtils.ins.getJSONObject("https://api.memeload.us/v1/random").async( (json) -> {
 
-            if(random.nextInt(2) == 1){
-                String url = json.getString("url");
-                MessageEmbed embed = EmbedUtils.embedImage(url);
+                String image = json.getString("image");
+                MessageEmbed embed = EmbedUtils.embedImage(image).build();
                 //TODO: Make a permission check to see if the bot can send embeds if not, send plain text.
                 event.getChannel().sendMessage(embed).queue();
-            }
-            String text = json.getString("text");
-            MessageEmbed embed = EmbedUtils.embedMessage(text);
-            //TODO: Make a permission check to see if the bot can send embeds if not, send plain text.
-            event.getChannel().sendMessage(embed).queue();
-        });
+            });
 
     }
 
