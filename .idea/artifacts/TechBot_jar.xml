@@ -1,6 +1,6 @@
 <component name="ArtifactManager">
-  <artifact type="jar" name="ta:jar">
-    <output-path>$PROJECT_DIR$/out/artifacts/ta_jar</output-path>
+  <artifact type="jar" name="TechBot:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/TechBot_jar</output-path>
     <root id="archive" name="ta.jar">
       <element id="directory" name="META-INF">
         <element id="file-copy" path="$PROJECT_DIR$/META-INF/MANIFEST.MF" />

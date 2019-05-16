@@ -28,6 +28,7 @@ dependencies {
     compile "ch.qos.logback:logback-classic:$logBC"
     compile "club.minnced:discord-webhooks:$disWeb"
     compile "org.json:json:20180813"
+    compile 'mysql:mysql-connector-java:5.1.+'
     implementation 'com.github.duncte123:botCommons:f4348d49b0'
 }
 
