@@ -46,7 +46,7 @@ public class UserInfoCMD implements IntCommand {
                 .setColor(member.getColor())
                 .setThumbnail(user.getEffectiveAvatarUrl().replaceFirst("gif", "png"))
                 .addField("Username#Discriminator", String.format("%#s", user), false)
-                .addField("Discplay name", member.getEffectiveName(), false)
+                .addField("Display name", member.getEffectiveName(), false)
                 .addField("User Id + Mention", String.format("%s ()%s", user.getId(), member.getAsMention()),false)
                 .addField("Account Created", user.getCreationTime().format(DateTimeFormatter.RFC_1123_DATE_TIME), false)
                 .addField("Guild Joined", member.getJoinDate().format(DateTimeFormatter.RFC_1123_DATE_TIME), false)
