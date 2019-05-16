@@ -44,7 +44,7 @@ public class RapSheetCMD implements IntCommand {
         String id = user.getId();
         String guild = event.getGuild().getName();
 
-        String query = "SELECT * FROM " + guild + " WHERE ID = '" + id + "'";
+        String query = "SELECT *  FROM " + guild + " WHERE ID = '" + id + "'";
         try {
 
             Connection con = DriverManager.getConnection(
@@ -57,20 +57,56 @@ public class RapSheetCMD implements IntCommand {
                     String nam = rs.getString("name");
                     String war = rs.getString("warnings");
                     String rwar = rs.getString("rwarnings");
+                    if (rs.wasNull()){
+                        rwar = "";
+                    }
                     String kik = rs.getString("kicks");
                     String rkik = rs.getString("rkicks");
+                    if (rs.wasNull()){
+                        rkik = "";
+                    }
                     String ban = rs.getString("bans");
                     String rban = rs.getString("rbans");
+                    if (rs.wasNull()){
+                        rban = "";
+                    }
                     String mut = rs.getString("mute");
                     String rmute = rs.getString("rmute");
+                    if (rs.wasNull()){
+                        rmute = "";
+                    }
                     String mdatetime = rs.getString("mdatetime");
+                    if (rs.wasNull()){
+                        mdatetime = "";
+                    }
                     String mmod =rs.getString("mmod");
+                    if (rs.wasNull()){
+                        mmod = "";
+                    }
                     String wdatetime = rs.getString("wdatetime");
+                    if (rs.wasNull()){
+                        wdatetime = "";
+                    }
                     String wmod =rs.getString("wmod");
+                    if (rs.wasNull()){
+                        wmod = "";
+                    }
                     String kdatetime = rs.getString("kdatetime");
+                    if (rs.wasNull()){
+                        kdatetime = "";
+                    }
                     String kmod =rs.getString("kmod");
+                    if (rs.wasNull()){
+                        kmod = "";
+                    }
                     String bdatetime = rs.getString("bdatetime");
+                    if (rs.wasNull()){
+                        bdatetime = "";
+                    }
                     String bmod =rs.getString("bmod");
+                    if (rs.wasNull()){
+                        bmod = "";
+                    }
 
 
                     MessageEmbed embed = EmbedUtils.defaultEmbed()

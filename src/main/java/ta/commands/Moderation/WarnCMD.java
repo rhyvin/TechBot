@@ -54,7 +54,7 @@ public class WarnCMD implements IntCommand {
             long datetime = date.getTime();
             Connection con = DriverManager.getConnection(
                     "jdbc:mysql://localhost:3306/techbot?useSSL=false", DSecretsMod.UNAME, DSecretsMod.UPASS);
-            String sqlCreate = "INSERT INTO " + guild + " (ID, `name`, `warnings`, `rwarn`, `wmod`, `wdatetime`) VALUES (" + id +",'" +uname+"',1,'" + reason + "','"+mod+"','"+sdf.format(date)+" @ "+stf.format(date)+"') ON DUPLICATE KEY UPDATE `warnings` = `warnings` + 1,`rwarn` = '" +reason+"',`wmod`= '"+mod+"',`wdatetime` = '"+sdf.format(date)+" @ "+stf.format(date)+"'";
+            String sqlCreate = "INSERT INTO " + guild + " (ID, `name`, `warnings`, `rwarnings`, `wmod`, `wdatetime`) VALUES (" + id +",'" +uname+"',1,'" + reason + "','"+mod+"','"+sdf.format(date)+" @ "+stf.format(date)+"') ON DUPLICATE KEY UPDATE `warnings` = `warnings` + 1,`rwarnings` = '" +reason+"',`wmod`= '"+mod+"',`wdatetime` = '"+sdf.format(date)+" @ "+stf.format(date)+"'";
 
             // create the java statement
             Statement st = con.createStatement();
