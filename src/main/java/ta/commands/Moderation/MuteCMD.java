@@ -6,7 +6,9 @@ import net.dv8tion.jda.core.entities.TextChannel;
 import net.dv8tion.jda.core.events.message.guild.GuildMessageReceivedEvent;
 import ta.util.IntCommand;
 
+import java.sql.*;
 import java.text.SimpleDateFormat;
+import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
 
@@ -44,6 +46,25 @@ public class MuteCMD implements IntCommand {
         Date date = new Date(System.currentTimeMillis());
         event.getGuild().getController().addRolesToMember(mentionedMembers.get(0), event.getGuild().getRolesByName("Muted", true)).queue();
         channel.sendMessage(String.format("Muted by: %#s, with reason: %s on, " + sdf.format(date) + " at " + stf.format(date) + ". ", event.getAuthor(), reason)).queue();
+        try {
+            String mod = member.getEffectiveName();
+            String id = target.getUser().getId();
+            String uname = target.getEffectiveName();
+            String guild = event.getGuild().getName();
+            long datetime = date.getTime();
+            Connection con = DriverManager.getConnection(
+                    "jdbc:mysql://localhost:3306/techbot?useSSL=false", DSecretsMod.UNAME, DSecretsMod.UPASS);
+            String sqlCreate = "INSERT INTO " + guild + " (ID, `name`, `mute`, `rmute`, `mmod`, `mdatetime`) VALUES (" + id +",'" +uname+"',1,'" + reason + "','"+mod+"','"+sdf.format(date)+" @ "+stf.format(date)+"') ON DUPLICATE KEY UPDATE `mute` = `mute` + 1,`rmute` = '" +reason+"',`mmod`= '"+mod+"',`mdatetime` = '"+sdf.format(date)+" @ "+stf.format(date)+"'";
+
+            // create the java statement
+            Statement st = con.createStatement();
+            st.execute(sqlCreate);
+            st.close();
+        }        catch (Exception e)
+        {
+            System.err.println("Got an exception! ");
+            System.err.println(e.getMessage());
+        }
 
     }
 

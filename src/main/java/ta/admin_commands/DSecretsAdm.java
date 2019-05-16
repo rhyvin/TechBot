@@ -1,6 +1,6 @@
-package ta.util;
+package ta.admin_commands;
 
-class DSecrets {
+class DSecretsAdm {
 
     static final String HOST = "localhost";
     static final String UNAME = "techbot";

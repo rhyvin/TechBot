@@ -6,12 +6,14 @@ import java.util.regex.Pattern;
 
 import net.dv8tion.jda.core.events.message.guild.GuildMessageReceivedEvent;
 import org.jetbrains.annotations.NotNull;
+import ta.admin_commands.RapSheetCMD;
 import ta.admin_commands.ServerInfoCMD;
 import ta.commands.HelpCMD;
 import ta.commands.Moderation.*;
 import ta.commands.PingCMD;
 import ta.commands.UserInfoCMD;
 import ta.commands.Fun.*;
+import ta.util.DbAttach;
 import ta.util.IntCommand;
 
 public class CommandManager {
@@ -26,6 +28,7 @@ public class CommandManager {
         addCommand(new JokeCMD(random));
         addCommand(new UserInfoCMD());
         addCommand(new BanCMD());
+        addCommand(new KickCMD());
         addCommand(new UnBanCMD());
         addCommand(new ServerInfoCMD());
         addCommand(new PurgeCMD());
@@ -33,6 +36,8 @@ public class CommandManager {
         addCommand(new M8ballCMD());
         addCommand(new MuteCMD());
         addCommand(new UnMuteCMD());
+        addCommand(new DbAttach());
+        addCommand(new RapSheetCMD());
     }
 
     private void addCommand(IntCommand command) {
@@ -59,14 +64,17 @@ public class CommandManager {
             final List<String> args = Arrays.asList(split).subList(1, split.length);
 
             event.getChannel().sendTyping().queue();
-            commands.get(invoke).handle(args, event);
+            try {
+                commands.get(invoke).handle(args, event);
+            } catch (ClassNotFoundException e) {
+                e.printStackTrace();
+            }
         }
     }
     //TODO History/Rapsheet command.
     //TODO Roles on Join/leave
-    //TODO Temp Ban/Mute Commands
+    //TODO Temp Ban
     //TODO Warn command
-    //TODO Set Mod actions to database
     //TODO Vote Commands
     //TODO Auto Gen Invite code commands
 }

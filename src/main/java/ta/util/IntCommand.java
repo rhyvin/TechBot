@@ -6,7 +6,7 @@ import net.dv8tion.jda.core.events.message.guild.GuildMessageReceivedEvent;
 
 public interface IntCommand {
 
-    void handle(List<String> args, GuildMessageReceivedEvent event);
+    void handle(List<String> args, GuildMessageReceivedEvent event) throws ClassNotFoundException;
     String getHelp();
     String getInvoke();
 

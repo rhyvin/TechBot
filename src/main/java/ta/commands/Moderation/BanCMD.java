@@ -5,8 +5,12 @@ import net.dv8tion.jda.core.entities.Member;
 import net.dv8tion.jda.core.entities.TextChannel;
 import net.dv8tion.jda.core.events.message.guild.GuildMessageReceivedEvent;
 import ta.Constants;
+
 import ta.util.IntCommand;
 
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.Statement;
 import java.util.List;
 
 public class BanCMD implements IntCommand {
@@ -42,6 +46,23 @@ public class BanCMD implements IntCommand {
                 .reason(String.format("Banned by: %#s, with reason: %s", event.getAuthor(), reason)).queue();
 
         channel.sendMessage("Success!").queue();
+        try {
+            String id = target.getUser().getId();
+            String uname = target.getEffectiveName();
+            String guild = event.getGuild().getName();
+            Connection con = DriverManager.getConnection(
+                    "jdbc:mysql://localhost:3306/techbot?useSSL=false", DSecretsMod.UNAME, DSecretsMod.UPASS);
+            String sqlCreate = "INSERT INTO " + guild + " (ID, `name`, `bans`, `rbans`) VALUES (" + id +",'" +uname+"',1,'" + reason + "') ON DUPLICATE KEY UPDATE `bans` = `bans` + 1,`rbans` = '" +reason+"'";
+
+            // create the java statement
+            Statement st = con.createStatement();
+            st.execute(sqlCreate);
+            st.close();
+        }        catch (Exception e)
+        {
+            System.err.println("Got an exception! ");
+            System.err.println(e.getMessage());
+        }
 
     }
 

@@ -17,7 +17,6 @@
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ta/CommandManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ta/CommandManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ta/admin_commands/RapSheetCMD.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ta/admin_commands/RapSheetCMD.java" afterDir="false" />
@@ -265,7 +264,21 @@
       <option name="project" value="LOCAL" />
       <updated>1557796761480</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Completely refactored Discord Bot.&#10;&#10;Bot now has been renamed, began to factor out Admin command, normal commands, Mod commands, and utilities.">
+      <created>1557975047739</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1557975047739</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Completely refactored Discord Bot.&#10;&#10;Bot now has been renamed, began to factor out Admin command, normal commands, Mod commands, and utilities.">
+      <created>1557975665887</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1557975665887</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TodoView">
@@ -292,7 +305,7 @@
       <window_info anchor="bottom" id="Terminal" order="2" sideWeight="0.49838188" weight="0.32569557" />
       <window_info anchor="bottom" id="Event Log" order="3" sideWeight="0.505295" side_tool="true" weight="0.3371522" />
       <window_info anchor="bottom" id="Build" order="4" sideWeight="0.4935275" weight="0.3066089" />
-      <window_info anchor="bottom" id="Version Control" order="5" sideWeight="0.494705" visible="true" weight="0.3371522" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="5" sideWeight="0.494705" visible="true" weight="0.3371522" />
       <window_info anchor="bottom" id="Message" order="6" />
       <window_info anchor="bottom" id="Find" order="7" />
       <window_info anchor="bottom" id="Run" order="8" sideWeight="0.49205378" weight="0.22913256" />
