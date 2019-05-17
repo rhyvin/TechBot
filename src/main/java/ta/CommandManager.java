@@ -14,7 +14,6 @@ import ta.commands.Moderation.*;
 import ta.commands.PingCMD;
 import ta.commands.UserInfoCMD;
 import ta.commands.Fun.*;
-import ta.util.DbAttach;
 import ta.util.IntCommand;
 
 public class CommandManager {
@@ -37,7 +36,6 @@ public class CommandManager {
         addCommand(new M8ballCMD());
         addCommand(new MuteCMD());
         addCommand(new UnMuteCMD());
-        addCommand(new DbAttach());
         addCommand(new RapSheetCMD());
         addCommand(new WarnCMD());
         addCommand(new InstallCMD());
