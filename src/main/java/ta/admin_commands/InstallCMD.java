@@ -1,6 +1,5 @@
 package ta.admin_commands;
 
-
 import net.dv8tion.jda.core.events.message.guild.GuildMessageReceivedEvent;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -20,7 +19,7 @@ public class InstallCMD implements IntCommand {
         try {
             String guild = event.getGuild().getName();
             Connection con = DriverManager.getConnection(
-                    "jdbc:mysql://localhost:3306/techbot?useSSL=false", DSecretsAdm.UNAME, DSecretsAdm.UPASS);
+                    "jdbc:mysql://157.230.191.75:3306/techbot?useSSL=false&autoReconnect=true", DSecretsAdm.UNAME, DSecretsAdm.UPASS);
             String sqlCreate = "CREATE TABLE IF NOT EXISTS "+guild+" (`id` INT NOT NULL, `name` VARCHAR(45) NOT NULL, `mute` TINYINT NULL DEFAULT 0,`rmute` VARCHAR(45) NULL,`warnings` TINYINT NULL DEFAULT 0, `rwarnings` VARCHAR(45) NULL, `kicks` TINYINT NULL DEFAULT 0, `rkicks` VARCHAR(45) NULL, `bans` TINYINT NULL DEFAULT 0, `rbans` VARCHAR(45) NULL, PRIMARY KEY (`id`))";
             DatabaseMetaData dbm =con.getMetaData();
             ResultSet tables = dbm.getTables(null,null, guild,null);
@@ -48,8 +47,8 @@ public class InstallCMD implements IntCommand {
         try {
             String guild = event.getGuild().getName();
             Connection con = DriverManager.getConnection(
-                    "jdbc:mysql://localhost:3306/techbot?useSSL=false", DSecretsAdm.UNAME, DSecretsAdm.UPASS);
-            String sqlCreate = "CREATE TABLE IF NOT EXISTS "+guild+" (`id` INT NOT NULL, `name` VARCHAR(45) NOT NULL, `mute` TINYINT NULL DEFAULT 0,`rmute` VARCHAR(45) NULL,`warnings` TINYINT NULL DEFAULT 0, `rwarnings` VARCHAR(45) NULL, `kicks` TINYINT NULL DEFAULT 0, `rkicks` VARCHAR(45) NULL, `bans` TINYINT NULL DEFAULT 0, `rbans` VARCHAR(45) NULL, PRIMARY KEY (`id`))";
+                    "jdbc:mysql://157.230.191.75:3306/techbot?useSSL=false&autoReconnect=true", DSecretsAdm.UNAME, DSecretsAdm.UPASS);
+            String sqlCreate = "INSERT INTO `botman` (`guild`, `prefix`, `logchan`, `modchan`) VALUES ('"+guild+"', '~', 'logs', 'moderators')";
             DatabaseMetaData dbm =con.getMetaData();
             ResultSet tables = dbm.getTables(null,null, guild,null);
 
