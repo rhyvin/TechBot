@@ -53,7 +53,7 @@ public class MuteCMD implements IntCommand {
             String guild = event.getGuild().getName();
             long datetime = date.getTime();
             Connection con = DriverManager.getConnection(
-                    "jdbc:mysql://localhost:3306/techbot?useSSL=false", DSecretsMod.UNAME, DSecretsMod.UPASS);
+                    "jdbc:mysql://157.230.191.75:3306/techbot?useSSL=false", DSecretsMod.UNAME, DSecretsMod.UPASS);
             String sqlCreate = "INSERT INTO " + guild + " (ID, `name`, `mute`, `rmute`, `mmod`, `mdatetime`) VALUES (" + id +",'" +uname+"',1,'" + reason + "','"+mod+"','"+sdf.format(date)+" @ "+stf.format(date)+"') ON DUPLICATE KEY UPDATE `mute` = `mute` + 1,`rmute` = '" +reason+"',`mmod`= '"+mod+"',`mdatetime` = '"+sdf.format(date)+" @ "+stf.format(date)+"'";
 
             // create the java statement

@@ -50,7 +50,7 @@ public class KickCMD implements IntCommand {
             String uname = target.getEffectiveName();
             String guild = event.getGuild().getName();
             Connection con = DriverManager.getConnection(
-                    "jdbc:mysql://localhost:3306/techbot?useSSL=false", DSecretsMod.UNAME, DSecretsMod.UPASS);
+                    "jdbc:mysql://157.230.191.75:3306/techbot?useSSL=false", DSecretsMod.UNAME, DSecretsMod.UPASS);
             String sqlCreate = "INSERT INTO " + guild + " (ID, `name`, `kicks`, `rkicks`) VALUES (" + id +",'" +uname+"',1,'" + reason + "') ON DUPLICATE KEY UPDATE `kicks` = `kicks` + 1,`rkicks` = '" +reason+"'";
 
             // create the java statement

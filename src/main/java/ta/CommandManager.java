@@ -6,6 +6,7 @@ import java.util.regex.Pattern;
 
 import net.dv8tion.jda.core.events.message.guild.GuildMessageReceivedEvent;
 import org.jetbrains.annotations.NotNull;
+import ta.admin_commands.GetPrefix;
 import ta.admin_commands.InstallCMD;
 import ta.admin_commands.RapSheetCMD;
 import ta.admin_commands.ServerInfoCMD;
@@ -39,6 +40,7 @@ public class CommandManager {
         addCommand(new RapSheetCMD());
         addCommand(new WarnCMD());
         addCommand(new InstallCMD());
+        addCommand(new GetPrefix());
     }
 
     private void addCommand(IntCommand command) {

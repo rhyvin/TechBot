@@ -48,7 +48,7 @@ public class RapSheetCMD implements IntCommand {
         try {
 
             Connection con = DriverManager.getConnection(
-                    "jdbc:mysql://localhost:3306/techbot?useSSL=false", DSecretsAdm.UNAME, DSecretsAdm.UPASS);
+                    "jdbc:mysql://157.230.191.75:3306/techbot?useSSL=false", DSecretsAdm.UNAME, DSecretsAdm.UPASS);
             PreparedStatement pst = con.prepareStatement(query);
             ResultSet rs = pst.executeQuery();
             {
@@ -114,10 +114,10 @@ public class RapSheetCMD implements IntCommand {
                             .setThumbnail(user.getEffectiveAvatarUrl().replaceFirst("gif", "png"))
                             .addField("**"+nam+"**" + " **(ID:"+sid+")**","", false)
                             .addField("__**MODERATION STATISTICS**__", "", true)
-                            .addField("Warnings: " + war,  "<"+wdatetime+"> ***"+wmod+"*** ---"+rwar, false)
-                            .addField("Mutes: " + mut, "<"+mdatetime+"> ***"+mmod+"*** ---"+rmute, false)
-                            .addField("Kicks: " + kik, "<"+kdatetime+"> ***"+kmod+"*** ---"+ rkik, false)
-                            .addField("Bans: " + ban, "<"+bdatetime+"> ***"+bmod+"*** ---"+ rban, false)
+                            .addField("Warnings: " + war,  wdatetime+" "+wmod+" "+rwar, false)
+                            .addField("Mutes: " + mut, mdatetime+" "+mmod+" "+rmute, false)
+                            .addField("Kicks: " + kik, kdatetime+" "+kmod+" "+ rkik, false)
+                            .addField("Bans: " + ban, bdatetime+" "+bmod+" "+ rban, false)
                             .addField("Joined Server: ", member.getJoinDate().format(DateTimeFormatter.RFC_1123_DATE_TIME), true)
                             .addField("Time Since Moderation: ", "TODO", true)
                             .build();
