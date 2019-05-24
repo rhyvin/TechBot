@@ -8,9 +8,12 @@ import net.dv8tion.jda.core.JDABuilder;
 import net.dv8tion.jda.core.entities.Game;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import ta.config.Config;
 
 import javax.security.auth.login.LoginException;
 import java.awt.*;
+import java.io.File;
+import java.io.IOException;
 import java.time.Instant;
 import java.util.Random;
 
@@ -18,8 +21,8 @@ public class Bot {
 
     private final Random random = new Random();
 
-    private Bot() {
-
+    private Bot() throws IOException {
+        Config config = new Config(new File("botconfig.json"));
         CommandManager commandManager = new CommandManager(random);
         Listener listener = new Listener(commandManager);
         Logger logger = LoggerFactory.getLogger(Bot.class);
@@ -36,8 +39,7 @@ public class Bot {
         try {
             logger.info("Booting");
             new JDABuilder(AccountType.BOT)
-                    .setToken(Secrets.TOKEN)
-                    .setAudioEnabled(false)
+                    .setToken(config.getString("token"))
                     .setGame(Game.watching("for trouble."))
                     .addEventListener(listener)
                     .build().awaitReady();
@@ -55,7 +57,7 @@ public class Bot {
         return new Color(r, g, b);
     }
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
         new Bot();
     }
 

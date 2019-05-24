@@ -7,8 +7,11 @@ import net.dv8tion.jda.core.entities.MessageEmbed;
 import net.dv8tion.jda.core.entities.User;
 import net.dv8tion.jda.core.events.message.guild.GuildMessageReceivedEvent;
 import ta.Constants;
+import ta.config.Config;
 import ta.util.IntCommand;
 
+import java.io.File;
+import java.io.IOException;
 import java.sql.*;
 import java.time.format.DateTimeFormatter;
 import java.util.List;
@@ -16,7 +19,8 @@ import java.util.stream.Collectors;
 
 public class RapSheetCMD implements IntCommand {
     @Override
-    public void handle(List<String> args, GuildMessageReceivedEvent event) throws ClassNotFoundException {
+    public void handle(List<String> args, GuildMessageReceivedEvent event) throws ClassNotFoundException, IOException {
+        Config config = new Config(new File("botconfig.json"));
 
         if (args.isEmpty()) {
             event.getChannel().sendMessage("Missing arguments, check `" + Constants.prefix + "help " + getInvoke() + "`").queue();
@@ -48,7 +52,7 @@ public class RapSheetCMD implements IntCommand {
         try {
 
             Connection con = DriverManager.getConnection(
-                    "jdbc:mysql://157.230.191.75:3306/techbot?useSSL=false", DSecretsAdm.UNAME, DSecretsAdm.UPASS);
+                    config.getString("host"), config.getString("uname"), config.getString("upass"));
             PreparedStatement pst = con.prepareStatement(query);
             ResultSet rs = pst.executeQuery();
             {

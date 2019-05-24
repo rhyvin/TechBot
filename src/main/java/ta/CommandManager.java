@@ -1,5 +1,6 @@
 package ta;
 
+import java.io.IOException;
 import java.util.*;
 import java.util.regex.Pattern;
 
@@ -15,6 +16,8 @@ import ta.commands.Moderation.*;
 import ta.commands.PingCMD;
 import ta.commands.UserInfoCMD;
 import ta.commands.Fun.*;
+import ta.commands.audio.*;
+import ta.config.Config;
 import ta.util.IntCommand;
 
 public class CommandManager {
@@ -22,26 +25,37 @@ public class CommandManager {
     private final Map<String, IntCommand> commands = new HashMap<>();
 
     CommandManager(Random random) {
-        addCommand(new PingCMD());
-        addCommand(new HelpCMD(this));
-        addCommand(new CatCMD());
-        addCommand(new DogCMD());
-        addCommand(new JokeCMD(random));
-        addCommand(new UserInfoCMD());
-        addCommand(new BanCMD());
-        addCommand(new KickCMD());
-        addCommand(new UnBanCMD());
-        addCommand(new ServerInfoCMD());
-        addCommand(new PurgeCMD());
-        addCommand(new MemeCMD(random));
-        addCommand(new M8ballCMD());
-        addCommand(new MuteCMD());
-        addCommand(new UnMuteCMD());
-        addCommand(new RapSheetCMD());
-        addCommand(new WarnCMD());
-        addCommand(new InstallCMD());
-        addCommand(new GetPrefix());
-    }
+
+
+            addCommand(new PingCMD());
+            addCommand(new HelpCMD(this));
+            addCommand(new CatCMD());
+            addCommand(new DogCMD());
+            addCommand(new JokeCMD(random));
+            addCommand(new UserInfoCMD());
+            addCommand(new BanCMD());
+            addCommand(new KickCMD());
+            addCommand(new UnBanCMD());
+            addCommand(new ServerInfoCMD());
+            addCommand(new PurgeCMD());
+            addCommand(new MemeCMD(random));
+            addCommand(new M8ballCMD());
+            addCommand(new MuteCMD());
+            addCommand(new UnMuteCMD());
+            addCommand(new RapSheetCMD());
+            addCommand(new WarnCMD());
+            addCommand(new InstallCMD());
+            addCommand(new GetPrefix());
+            //Audio Commands
+            addCommand(new JoinCMD());
+            addCommand(new LeaveCMD());
+            addCommand(new PlayCMD());
+            addCommand(new StopCMD());
+            addCommand(new QueueCMD());
+            addCommand(new SkipCMD());
+            addCommand(new NowPlayingCMD());
+        }
+
 
     private void addCommand(IntCommand command) {
         if(!commands.containsKey(command.getInvoke())) {
@@ -70,6 +84,8 @@ public class CommandManager {
             try {
                 commands.get(invoke).handle(args, event);
             } catch (ClassNotFoundException e) {
+                e.printStackTrace();
+            } catch (IOException e) {
                 e.printStackTrace();
             }
         }
