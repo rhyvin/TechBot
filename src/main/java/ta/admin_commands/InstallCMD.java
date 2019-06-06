@@ -4,15 +4,19 @@ import net.dv8tion.jda.core.entities.TextChannel;
 import net.dv8tion.jda.core.events.message.guild.GuildMessageReceivedEvent;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import ta.config.Config;
 import ta.util.IntCommand;
 
+import java.io.File;
+import java.io.IOException;
 import java.sql.*;
 import java.util.List;
 
 public class InstallCMD implements IntCommand {
 
     @Override
-    public void handle(List<String> args, GuildMessageReceivedEvent event) throws ClassNotFoundException {
+    public void handle(List<String> args, GuildMessageReceivedEvent event) throws ClassNotFoundException, IOException {
+        Config config = new Config(new File("botconfig.json"));
 
         final Logger logger = LoggerFactory.getLogger(InstallCMD.class);
 
@@ -21,7 +25,7 @@ public class InstallCMD implements IntCommand {
         try {
             String guild = event.getGuild().getName();
             Connection con = DriverManager.getConnection(
-                    "jdbc:mysql://157.230.191.75:3306/techbot?useSSL=false&autoReconnect=true", DSecretsAdm.UNAME, DSecretsAdm.UPASS);
+                    config.getString("host"), config.getString("uname"), config.getString("upass"));
             String sqlCreate = "CREATE TABLE IF NOT EXISTS " + guild + " (`id` VARCHAR(45) NOT NULL,`name` VARCHAR(45) NOT NULL,`mute` INT(11) NULL DEFAULT '0',`rmute` VARCHAR(45) NULL DEFAULT 'N/A',`warnings` INT(11) NULL DEFAULT '0',`rwarnings` VARCHAR(45) NULL DEFAULT 'N/A',`kicks` INT(11) NULL DEFAULT '0',`rkicks` VARCHAR(45) NULL DEFAULT 'N/A',`bans` INT(11) NULL DEFAULT '0',`rbans` VARCHAR(45) NULL DEFAULT 'N/A',`mmod` VARCHAR(45) NULL,`mdatetime` VARCHAR(45) NULL,`wmod` VARCHAR(45) NULL,`wdatetime` VARCHAR(45) NULL,`kmod` VARCHAR(45) NULL,`kdatetime` VARCHAR(45) NULL,`bmod` VARCHAR(45) NULL,`bdatetime` VARCHAR(45) NULL,PRIMARY KEY (`id`))";
             DatabaseMetaData dbm = con.getMetaData();
             ResultSet tables = dbm.getTables(null, null, guild, null);
@@ -43,7 +47,7 @@ public class InstallCMD implements IntCommand {
 
         //Create default entries into a database for managing discord server
 
-        TextChannel channel = event.getChannel();
+        /*TextChannel channel = event.getChannel();
         if (args.isEmpty()) {
             channel.sendMessage("Missing arguments, please use '~install [prefix],[logchannel],[moderatorschannel]").queue();
             return;
@@ -58,7 +62,7 @@ public class InstallCMD implements IntCommand {
 
                 String guild = event.getGuild().getName();
                 Connection con = DriverManager.getConnection(
-                        "jdbc:mysql://157.230.191.75:3306/techbot?useSSL=false&autoReconnect=true", DSecretsAdm.UNAME, DSecretsAdm.UPASS);
+                        config.getString("host"), config.getString("uname"), config.getString("upass"));
                 String sqlCreate = "INSERT INTO `botman` (`guild`, `prefix`, `logchan`, `modchan`) VALUES ('" + guild + "', '" + prefix + "', '" + logchan + "', '" + modchan + "')";
                 DatabaseMetaData dbm = con.getMetaData();
                 ResultSet tables = dbm.getTables(null, null, guild, null);
@@ -77,7 +81,7 @@ public class InstallCMD implements IntCommand {
                 System.err.println("Got an exception! ");
                 System.err.println(e.getMessage());
             }
-        }
+        }*/
     }
 
     @Override

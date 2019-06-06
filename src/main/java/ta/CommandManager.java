@@ -15,6 +15,7 @@ import ta.commands.Moderation.*;
 import ta.commands.PingCMD;
 import ta.commands.UserInfoCMD;
 import ta.commands.Fun.*;
+import ta.commands.audio.*;
 import ta.util.IntCommand;
 
 public class CommandManager {
@@ -25,21 +26,25 @@ public class CommandManager {
         addCommand(new PingCMD());
         addCommand(new HelpCMD(this));
         addCommand(new CatCMD());
-        addCommand(new DogCMD());
-        addCommand(new JokeCMD(random));
         addCommand(new UserInfoCMD());
         addCommand(new BanCMD());
         addCommand(new KickCMD());
         addCommand(new UnBanCMD());
         addCommand(new ServerInfoCMD());
         addCommand(new PurgeCMD());
-        addCommand(new MemeCMD(random));
         addCommand(new M8ballCMD());
         addCommand(new MuteCMD());
         addCommand(new UnMuteCMD());
         addCommand(new RapSheetCMD());
         addCommand(new WarnCMD());
         addCommand(new InstallCMD());
+        addCommand(new JoinCMD());
+        addCommand(new LeaveCMD());
+        addCommand(new PlayCMD());
+        addCommand(new QueueCMD());
+        addCommand(new SkipCMD());
+        addCommand(new StopCMD());
+        addCommand(new NowPlayingCMD());
     }
 
     private void addCommand(IntCommand command) {

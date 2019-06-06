@@ -4,6 +4,7 @@ package ta.commands.audio;
 import com.sedmelluq.discord.lavaplayer.player.AudioPlayer;
 import com.sedmelluq.discord.lavaplayer.track.AudioTrackInfo;
 import me.duncte123.botcommons.messaging.EmbedUtils;
+import net.dv8tion.jda.core.entities.Message;
 import net.dv8tion.jda.core.entities.TextChannel;
 import net.dv8tion.jda.core.events.message.guild.GuildMessageReceivedEvent;
 import ta.music.GuildMusicManager;
@@ -29,7 +30,7 @@ public class NowPlayingCMD implements IntCommand {
 
         AudioTrackInfo info = player.getPlayingTrack().getInfo();
 
-        channel.sendMessage(EmbedUtils.embedMessage(String.format(
+        channel.sendMessage((Message) EmbedUtils.embedMessage(String.format(
                 "**Playing** [%s](%s)\n%s %s - %s",
                 info.title,
                 info.uri,
@@ -41,7 +42,7 @@ public class NowPlayingCMD implements IntCommand {
 
     @Override
     public String getHelp() {
-        return "Displays the current track that is playing.";
+        return "Shows the currently playing track";
     }
 
     @Override
