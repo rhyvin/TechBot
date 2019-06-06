@@ -21,7 +21,7 @@ public class GetPrefix implements IntCommand {
         public void handle (List < String > args, GuildMessageReceivedEvent event) throws ClassNotFoundException {
 
             String guild = event.getGuild().getName();
-            String query = "SELECT `prefix`  FROM  botman WHERE `guild` = '" + guild + "'";
+            String query = "SELECT `prefix`  FROM  botman WHERE `guild` = '" + guild +"'";
             try {
 
                 Connection con = DriverManager.getConnection(
