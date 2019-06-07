@@ -1,12 +1,15 @@
 package ta.commands.Moderation;
 
 import ta.Constants;
+import ta.config.Config;
 import ta.util.IntCommand;
 import net.dv8tion.jda.core.Permission;
 import net.dv8tion.jda.core.entities.Member;
 import net.dv8tion.jda.core.entities.TextChannel;
 import net.dv8tion.jda.core.events.message.guild.GuildMessageReceivedEvent;
 
+import java.io.File;
+import java.io.IOException;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.Statement;
@@ -14,7 +17,7 @@ import java.util.List;
 
 public class KickCMD implements IntCommand {
     @Override
-    public void handle(List<String> args, GuildMessageReceivedEvent event) {
+    public void handle(List<String> args, GuildMessageReceivedEvent event) throws IOException {
 
         TextChannel channel = event.getChannel();
         Member member = event.getMember();
@@ -45,12 +48,13 @@ public class KickCMD implements IntCommand {
                 event.getAuthor(), reason)).queue();
 
         channel.sendMessage("Success!").queue();
+        Config config = new Config(new File("botconfig.json"));
         try {
             String id = target.getUser().getId();
             String uname = target.getEffectiveName();
             String guild = event.getGuild().getName();
             Connection con = DriverManager.getConnection(
-                    "jdbc:mysql://157.230.191.75:3306/techbot?useSSL=false", DSecretsMod.UNAME, DSecretsMod.UPASS);
+                    "jdbc:mysql://157.230.191.75:3306/techbot?useSSL=false", config.getString("uname"), config.getString("upass"));
             String sqlCreate = "INSERT INTO " + guild + " (ID, `name`, `kicks`, `rkicks`) VALUES (" + id +",'" +uname+"',1,'" + reason + "') ON DUPLICATE KEY UPDATE `kicks` = `kicks` + 1,`rkicks` = '" +reason+"'";
 
             // create the java statement

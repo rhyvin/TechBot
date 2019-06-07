@@ -38,7 +38,7 @@ public class M8ballCMD implements IntCommand {
         mball.setColor(0x66d8ff);
         mball.setDescription("Magic 8 Ball says: `" + eightBallResponses[number] + "`");
 
-        event.getGuild().getDefaultChannel().sendMessage(mball.build()).queue();
+        event.getChannel().sendMessage(mball.build()).queue();
 
     }
 

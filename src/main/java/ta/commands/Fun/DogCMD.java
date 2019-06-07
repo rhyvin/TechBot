@@ -11,7 +11,7 @@ import java.util.List;
 public class DogCMD implements IntCommand {
     @Override
     public void handle(List<String> args, GuildMessageReceivedEvent event) {
-        WebUtils.ins.getJSONObject("https://random.dog/woof.json").async( (json) -> {
+       WebUtils.ins.getJSONObject("https://random.dog/woof.json").async( (json) -> {
             String url = json.getString("url");
             MessageEmbed embed = EmbedUtils.embedImage(url).build();
             //TODO: Make a permission check to see if the bot can send embeds if not, send plain text.
@@ -30,5 +30,4 @@ public class DogCMD implements IntCommand {
         return "dog";
     }
 }
-
 */

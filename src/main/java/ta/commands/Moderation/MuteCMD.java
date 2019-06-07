@@ -4,8 +4,11 @@ import net.dv8tion.jda.core.Permission;
 import net.dv8tion.jda.core.entities.Member;
 import net.dv8tion.jda.core.entities.TextChannel;
 import net.dv8tion.jda.core.events.message.guild.GuildMessageReceivedEvent;
+import ta.config.Config;
 import ta.util.IntCommand;
 
+import java.io.File;
+import java.io.IOException;
 import java.sql.*;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
@@ -16,7 +19,7 @@ import java.util.List;
 
 public class MuteCMD implements IntCommand {
     @Override
-    public void handle(List<String> args, GuildMessageReceivedEvent event) {
+    public void handle(List<String> args, GuildMessageReceivedEvent event) throws IOException {
 
         TextChannel channel = event.getChannel();
         Member member = event.getMember();
@@ -46,6 +49,7 @@ public class MuteCMD implements IntCommand {
         Date date = new Date(System.currentTimeMillis());
         event.getGuild().getController().addRolesToMember(mentionedMembers.get(0), event.getGuild().getRolesByName("Muted", true)).queue();
         channel.sendMessage(String.format("Muted by: %#s, with reason: %s on, " + sdf.format(date) + " at " + stf.format(date) + ". ", event.getAuthor(), reason)).queue();
+        Config config = new Config(new File("botconfig.json"));
         try {
             String mod = member.getEffectiveName();
             String id = target.getUser().getId();
@@ -53,7 +57,7 @@ public class MuteCMD implements IntCommand {
             String guild = event.getGuild().getName();
             long datetime = date.getTime();
             Connection con = DriverManager.getConnection(
-                    "jdbc:mysql://157.230.191.75:3306/techbot?useSSL=false", DSecretsMod.UNAME, DSecretsMod.UPASS);
+                    "jdbc:mysql://157.230.191.75:3306/techbot?useSSL=false", config.getString("uname"), config.getString("upass"));
             String sqlCreate = "INSERT INTO " + guild + " (ID, `name`, `mute`, `rmute`, `mmod`, `mdatetime`) VALUES (" + id +",'" +uname+"',1,'" + reason + "','"+mod+"','"+sdf.format(date)+" @ "+stf.format(date)+"') ON DUPLICATE KEY UPDATE `mute` = `mute` + 1,`rmute` = '" +reason+"',`mmod`= '"+mod+"',`mdatetime` = '"+sdf.format(date)+" @ "+stf.format(date)+"'";
 
             // create the java statement
