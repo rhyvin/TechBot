@@ -5,12 +5,14 @@ import com.sedmelluq.discord.lavaplayer.player.AudioPlayer;
 import com.sedmelluq.discord.lavaplayer.track.AudioTrackInfo;
 import me.duncte123.botcommons.messaging.EmbedUtils;
 import net.dv8tion.jda.core.entities.Message;
+import net.dv8tion.jda.core.entities.MessageEmbed;
 import net.dv8tion.jda.core.entities.TextChannel;
 import net.dv8tion.jda.core.events.message.guild.GuildMessageReceivedEvent;
 import ta.music.GuildMusicManager;
 import ta.music.PlayerManager;
 import ta.util.IntCommand;
 
+import java.util.Calendar;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
@@ -30,14 +32,21 @@ public class NowPlayingCMD implements IntCommand {
 
         AudioTrackInfo info = player.getPlayingTrack().getInfo();
 
-        channel.sendMessage((Message) EmbedUtils.embedMessage(String.format(
-                "**Playing** [%s](%s)\n%s %s - %s",
-                info.title,
-                info.uri,
-                player.isPaused() ? "\u23F8" : "▶",
-                formatTime(player.getPlayingTrack().getPosition()),
-                formatTime(player.getPlayingTrack().getDuration())
-        ))).queue();
+       MessageEmbed embed = EmbedUtils.defaultEmbed()
+               .setTitle("**Now Playing** ")
+               .addField(info.title,"", false)
+               .addField(info.uri,"",false)
+               .addField(formatTime(player.getPlayingTrack().getPosition())+"-"+ formatTime(player.getPlayingTrack().getDuration()),"",false )
+               .build();
+        event.getChannel().sendMessage(embed).queue();
+    }
+
+    private String formatTime(long timeInMillis) {
+        final long hours = timeInMillis / TimeUnit.HOURS.toMillis(1);
+        final long minutes = timeInMillis / TimeUnit.MINUTES.toMillis(1);
+        final long seconds = timeInMillis % TimeUnit.MINUTES.toMillis(1) / TimeUnit.SECONDS.toMillis(1);
+
+        return String.format("%02d:%02d:%02d", hours, minutes, seconds);
     }
 
     @Override
@@ -50,11 +59,5 @@ public class NowPlayingCMD implements IntCommand {
         return "np";
     }
 
-    private String formatTime(long timeInMillis) {
-        final long hours = timeInMillis / TimeUnit.HOURS.toMillis(1);
-        final long minutes = timeInMillis / TimeUnit.MINUTES.toMillis(1);
-        final long seconds = timeInMillis % TimeUnit.MINUTES.toMillis(1) / TimeUnit.SECONDS.toMillis(1);
 
-        return String.format("%02d:%02d:%02d", hours, minutes, seconds);
-    }
 }

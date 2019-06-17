@@ -58,7 +58,7 @@ public class WarnCMD implements IntCommand {
             String guild = event.getGuild().getName();
             long datetime = date.getTime();
             Connection con = DriverManager.getConnection(
-                    "jdbc:mysql://157.230.191.75:3306/techbot?useSSL=false", config.getString("uname"), config.getString("upass"));
+                    config.getString("host"), config.getString("uname"), config.getString("upass"));
             String sqlCreate = "INSERT INTO " + guild + " (ID, `name`, `warnings`, `rwarnings`, `wmod`, `wdatetime`) VALUES (" + id +",'" +uname+"',1,'" + reason + "','"+mod+"','"+sdf.format(date)+" @ "+stf.format(date)+"') ON DUPLICATE KEY UPDATE `warnings` = `warnings` + 1,`rwarnings` = '" +reason+"',`wmod`= '"+mod+"',`wdatetime` = '"+sdf.format(date)+" @ "+stf.format(date)+"'";
 
             // create the java statement

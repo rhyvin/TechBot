@@ -55,7 +55,7 @@ public class BanCMD implements IntCommand {
             String uname = target.getEffectiveName();
             String guild = event.getGuild().getName();
             Connection con = DriverManager.getConnection(
-                    "jdbc:mysql://157.230.191.75:3306/techbot?useSSL=false", config.getString("uname"), config.getString("upass"));
+                    config.getString("host"), config.getString("uname"), config.getString("upass"));
             String sqlCreate = "INSERT INTO " + guild + " (ID, `name`, `bans`, `rbans`) VALUES (" + id +",'" +uname+"',1,'" + reason + "') ON DUPLICATE KEY UPDATE `bans` = `bans` + 1,`rbans` = '" +reason+"'";
 
             // create the java statement
