@@ -17,6 +17,7 @@ import ta.commands.UserInfoCMD;
 import ta.commands.Fun.*;
 import ta.commands.audio.*;
 import ta.tickets.ticketCreate;
+import ta.tickets.ticketUpdate;
 import ta.util.IntCommand;
 
 public class CommandManager {
@@ -48,6 +49,7 @@ public class CommandManager {
         addCommand(new NowPlayingCMD());
         addCommand(new VoteCMD());
         addCommand(new ticketCreate());
+        addCommand(new ticketUpdate());
     }
 
     private void addCommand(IntCommand command) {

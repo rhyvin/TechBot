@@ -10,21 +10,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dfa2587d-01ee-41ac-8d2a-118dc46116c6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ta/tickets/ticketCreate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ta/tickets/ticketUpdate.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ta/CommandManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ta/CommandManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ta/Secrets.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ta/commands/Fun/VoteCMD.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ta/commands/Fun/VoteCMD.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ta/commands/Moderation/BanCMD.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ta/commands/Moderation/BanCMD.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ta/commands/Moderation/KickCMD.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ta/commands/Moderation/KickCMD.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ta/commands/Moderation/MuteCMD.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ta/commands/Moderation/MuteCMD.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ta/commands/Moderation/WarnCMD.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ta/commands/Moderation/WarnCMD.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ta/commands/audio/NowPlayingCMD.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ta/commands/audio/NowPlayingCMD.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ta/tickets/ticketCreate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ta/tickets/ticketCreate.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -67,37 +56,27 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ta/commands/Fun/VoteCMD.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ta/tickets/ticketUpdate.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="522">
-              <caret line="39" column="51" selection-start-line="39" selection-start-column="51" selection-end-line="39" selection-end-column="51" />
+            <state relative-caret-position="248">
+              <caret line="43" column="93" selection-start-line="43" selection-start-column="93" selection-end-line="43" selection-end-column="93" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#493#494#0" expanded="true" />
+                <element signature="e#520#521#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/botconfig.json">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ta/CommandManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="24" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="38" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ta/commands/audio/NowPlayingCMD.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="35" column="44" selection-start-line="35" selection-start-column="44" selection-end-line="35" selection-end-column="44" />
+            <state relative-caret-position="342">
+              <caret line="51" column="37" selection-start-line="51" selection-start-column="37" selection-end-line="51" selection-end-column="37" />
               <folding>
-                <element signature="e#2033#2034#0" expanded="true" />
-                <element signature="e#2091#2092#0" expanded="true" />
-                <element signature="e#2138#2139#0" expanded="true" />
-                <element signature="e#2165#2166#0" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -106,24 +85,14 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/ta/tickets/ticketCreate.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="371">
-              <caret line="85" column="28" selection-start-line="85" selection-start-column="28" selection-end-line="85" selection-end-column="37" />
+            <state relative-caret-position="78">
+              <caret line="72" column="39" lean-forward="true" selection-start-line="72" selection-start-column="39" selection-end-line="72" selection-end-column="39" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#3727#3728#0" expanded="true" />
                 <element signature="e#3752#3753#0" expanded="true" />
+                <element signature="e#3799#3800#0" expanded="true" />
                 <element signature="e#3830#3831#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ta/admin_commands/RapSheetCMD.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="115" column="20" selection-start-line="115" selection-start-column="20" selection-end-line="115" selection-end-column="66" />
-              <folding>
-                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -206,9 +175,10 @@
         <option value="$PROJECT_DIR$/src/main/java/ta/commands/Moderation/MuteCMD.java" />
         <option value="$PROJECT_DIR$/src/main/java/ta/commands/Moderation/KickCMD.java" />
         <option value="$PROJECT_DIR$/src/main/java/ta/commands/Moderation/BanCMD.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ta/CommandManager.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ta/tickets/ticketCreate.java" />
         <option value="$PROJECT_DIR$/src/main/java/ta/commands/audio/NowPlayingCMD.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ta/tickets/ticketCreate.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ta/CommandManager.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ta/tickets/ticketUpdate.java" />
       </list>
     </option>
   </component>
@@ -219,10 +189,10 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-1694" />
-    <option name="y" value="13" />
-    <option name="width" value="1680" />
-    <option name="height" value="1096" />
+    <option name="x" value="308" />
+    <option name="y" value="364" />
+    <option name="width" value="697" />
+    <option name="height" value="735" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -230,35 +200,36 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="ta" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TechnoBot" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="TechBot" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
             </path>
             <path>
               <item name="ta" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TechnoBot" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="TechBot" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ta" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TechnoBot" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="TechBot" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
             </path>
             <path>
               <item name="ta" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TechnoBot" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="TechBot" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ta" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TechnoBot" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="TechBot" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -266,7 +237,7 @@
             </path>
             <path>
               <item name="ta" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TechnoBot" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="TechBot" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -275,7 +246,7 @@
             </path>
             <path>
               <item name="ta" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TechnoBot" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="TechBot" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -284,29 +255,42 @@
             </path>
             <path>
               <item name="ta" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TechnoBot" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="TechBot" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="ta" type="462c0819:PsiDirectoryNode" />
-              <item name="commands" type="462c0819:PsiDirectoryNode" />
-              <item name="audio" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ta" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TechnoBot" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="TechBot" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="ta" type="462c0819:PsiDirectoryNode" />
-              <item name="commands" type="462c0819:PsiDirectoryNode" />
-              <item name="Moderation" type="462c0819:PsiDirectoryNode" />
+              <item name="music" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ta" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TechBot" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="ta" type="462c0819:PsiDirectoryNode" />
+              <item name="tickets" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ta" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TechBot" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -422,10 +406,9 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1688" y="22" width="1696" height="1026" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20415647" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2065053" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Capture Tool" order="3" />
@@ -435,13 +418,13 @@
       <window_info anchor="bottom" id="Messages" order="0" weight="0.32922733" />
       <window_info anchor="bottom" id="Inspection Results" order="1" weight="0.32922733" />
       <window_info anchor="bottom" id="Terminal" order="2" sideWeight="0.49838188" weight="0.32569557" />
-      <window_info anchor="bottom" id="Event Log" order="3" sideWeight="0.50611246" side_tool="true" weight="0.33482644" />
+      <window_info anchor="bottom" id="Event Log" order="3" sideWeight="0.50907713" side_tool="true" visible="true" weight="0.2831424" />
       <window_info anchor="bottom" id="Build" order="4" sideWeight="0.4935275" weight="0.3066089" />
       <window_info anchor="bottom" id="Version Control" order="5" sideWeight="0.49388754" weight="0.33482644" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49919093" weight="0.3281075" />
       <window_info anchor="bottom" id="Message" order="7" />
       <window_info anchor="bottom" id="Find" order="8" />
-      <window_info active="true" anchor="bottom" id="Run" order="9" sideWeight="0.49205378" visible="true" weight="0.28331468" />
+      <window_info anchor="bottom" id="Run" order="9" sideWeight="0.49092284" weight="0.2831424" />
       <window_info anchor="bottom" id="Debug" order="10" weight="0.39977604" />
       <window_info anchor="bottom" id="Cvs" order="11" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="12" weight="0.4" />
@@ -515,7 +498,6 @@
     </SUITE>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/src.zip!/java/time/OffsetDateTime.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/ta/util/NewMemberJoin.java" />
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.dv8tion/JDA/3.8.3_461/9c3fbe27e2c842b904beaf38e0c49a93d9418c8a/JDA-3.8.3_461-sources.jar!/net/dv8tion/jda/core/managers/GuildController.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -810,23 +792,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ta/Secrets.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ta/CommandManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="49" column="37" selection-start-line="49" selection-start-column="37" selection-end-line="49" selection-end-column="37" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ta/Secrets.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/ta/commands/Fun/CatCMD.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
@@ -885,18 +851,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ta/tickets/ticketCreate.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="371">
-          <caret line="85" column="28" selection-start-line="85" selection-start-column="28" selection-end-line="85" selection-end-column="37" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#3752#3753#0" expanded="true" />
-            <element signature="e#3830#3831#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ta/commands/audio/NowPlayingCMD.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -906,6 +860,42 @@
             <element signature="e#2091#2092#0" expanded="true" />
             <element signature="e#2138#2139#0" expanded="true" />
             <element signature="e#2165#2166#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ta/CommandManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="51" column="37" selection-start-line="51" selection-start-column="37" selection-end-line="51" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ta/tickets/ticketCreate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="78">
+          <caret line="72" column="39" lean-forward="true" selection-start-line="72" selection-start-column="39" selection-end-line="72" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#3727#3728#0" expanded="true" />
+            <element signature="e#3752#3753#0" expanded="true" />
+            <element signature="e#3799#3800#0" expanded="true" />
+            <element signature="e#3830#3831#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ta/tickets/ticketUpdate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="248">
+          <caret line="43" column="93" selection-start-line="43" selection-start-column="93" selection-end-line="43" selection-end-column="93" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#493#494#0" expanded="true" />
+            <element signature="e#520#521#0" expanded="true" />
           </folding>
         </state>
       </provider>

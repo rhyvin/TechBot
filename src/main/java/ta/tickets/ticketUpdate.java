@@ -14,7 +14,7 @@ import java.io.IOException;
 import java.sql.*;
 import java.util.List;
 
-public class ticketCreate implements IntCommand {
+public class ticketUpdate implements IntCommand {
     @Override
     public void handle(List<String> args, GuildMessageReceivedEvent event) throws ClassNotFoundException, IOException {
 
@@ -26,8 +26,10 @@ public class ticketCreate implements IntCommand {
 
 
 
-        String desc = String.join(" ", args.subList(1, args.size()));
-        if (desc.isEmpty() || args.size() < 2) {
+        String ticketNum = String.join(" ", args.subList(1, args.size()));
+        String note = String.join(" ", args.subList(1, args.size()));
+
+        if (ticketNum.isEmpty() || args.size() < 2) {
             channel.sendMessage("Missing Arguments").queue();
             return;
         }
@@ -39,7 +41,7 @@ public class ticketCreate implements IntCommand {
 
             Connection con = DriverManager.getConnection(
                     config.getString("host"), config.getString("uname"), config.getString("upass"));
-            String sqlCreate = "INSERT INTO `tickets` (`guild`, `user`, `tdesc`, `assignedTo`, `status`) VALUES ('"+guild+"', '"+user+"', '"+desc+"','Rhyvin','OPEN');";
+            String sqlCreate = "UDPATE `tickets` SET `notes` = '"+note+"' AND `ticketID` = '"+ticketNum+"' WHERE `ticketID` = '"+ticketNum+"');";
 
 
 
@@ -57,7 +59,7 @@ public class ticketCreate implements IntCommand {
         try{
             String user = member.getEffectiveName();
             String guild = event.getGuild().getName();
-            String query = "SELECT *  FROM `tickets` WHERE  `guild` = '"+guild+"' AND `user` = '"+user+"' AND `tdesc` ='"+desc+"' AND `assignedTo` = 'Rhyvin' AND `status` = 'OPEN';";
+            String query = "SELECT *  FROM `tickets` WHERE  `ticketID` = '"+ticketNum+"';";
 
             Connection con2 = DriverManager.getConnection(
                     config.getString("host"), config.getString("uname"), config.getString("upass"));
@@ -67,6 +69,8 @@ public class ticketCreate implements IntCommand {
             {
                 while (rs.next()) {
                     String ticketID = rs.getString("ticketID");
+                    String usr = rs.getString("user");
+                    String guld = rs.getString("guild");
                     String assignedTo = rs.getString("assignedTo");
                     String status = rs.getString("status");
                     String notes =rs.getString("notes");
@@ -78,7 +82,7 @@ public class ticketCreate implements IntCommand {
                     MessageEmbed embed = EmbedUtils.defaultEmbed()
                             .setColor(member.getColor())
                             .addField("__**Trouble Ticket**__", "", true)
-                            .addField("User: " + user + " Server: " + guild, "Ticket info: " + desc, false)
+                            .addField("User: " + usr + " Server: " + guld, "Ticket info: " + ticketNum, false)
                             .addField("Ticket ID: " + ticketID, "", false)
                             .addField("Assigned to: " + assignedTo, "", false)
                             .addField("Status: " + status, "", false)
@@ -94,15 +98,17 @@ public class ticketCreate implements IntCommand {
             System.err.println("Got an exception! ");
             System.err.println(e.getMessage());
         }
+
     }
 
     @Override
     public String getHelp() {
-        return "";
+        return null;
+        //TODO add help info here
     }
 
     @Override
     public String getInvoke() {
-        return "ticket";
+        return "ticket update";
     }
 }
