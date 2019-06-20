@@ -1,4 +1,4 @@
-package ta.commands;
+package ta.commands.Moderation;
 
 import com.jagrosh.jdautilities.commons.utils.FinderUtil;
 import me.duncte123.botcommons.messaging.EmbedUtils;
@@ -61,7 +61,7 @@ public class UserInfoCMD implements IntCommand {
     @Override
     public String getHelp() {
         return "Displays information about a specific user.\n" +
-                "Usage: `" + Constants.prefix + getInvoke() +" [user name/@user/user id]`";
+                "Usage: `" + Constants.prefix + getInvoke() +" <user name/@user/user id>`";
     }
 
     @Override

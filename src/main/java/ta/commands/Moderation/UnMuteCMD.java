@@ -3,6 +3,7 @@ package ta.commands.Moderation;
 import net.dv8tion.jda.core.Permission;
 import net.dv8tion.jda.core.entities.*;
 import net.dv8tion.jda.core.events.message.guild.GuildMessageReceivedEvent;
+import ta.Constants;
 import ta.util.IntCommand;
 
 import java.util.List;
@@ -46,7 +47,8 @@ public class UnMuteCMD implements IntCommand {
 
     @Override
     public String getHelp() {
-        return "Allow a player to communicate again.";
+        return "Allow a player to communicate again."+
+                "Usage: `" + Constants.prefix + getInvoke() + " unmute <user>`";
     }
 
     @Override

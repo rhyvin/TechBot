@@ -86,8 +86,8 @@ public class PurgeCMD implements IntCommand {
 
     @Override
     public String getHelp() {
-        return "Clears the chat in specified current channel with specified amount of messages.\n"+
-                "Usage: `" + Constants.prefix + getInvoke() + "<amount>`";
+        return "Clears the chat in specified current channel with specified amount of messages.\n Max of 100 messages at a time."+
+                "Usage: `" + Constants.prefix + getInvoke() + " <amount>`";
     }
 
     @Override

@@ -4,6 +4,7 @@ import net.dv8tion.jda.core.Permission;
 import net.dv8tion.jda.core.entities.Member;
 import net.dv8tion.jda.core.entities.TextChannel;
 import net.dv8tion.jda.core.events.message.guild.GuildMessageReceivedEvent;
+import ta.Constants;
 import ta.config.Config;
 import ta.util.IntCommand;
 
@@ -58,7 +59,7 @@ public class MuteCMD implements IntCommand {
             long datetime = date.getTime();
             Connection con = DriverManager.getConnection(
                     config.getString("host"), config.getString("uname"), config.getString("upass"));
-            String sqlCreate = "INSERT INTO " + guild + " (ID, `name`, `mute`, `rmute`, `mmod`, `mdatetime`) VALUES (" + id +",'" +uname+"',1,'" + reason + "','"+mod+"','"+sdf.format(date)+" @ "+stf.format(date)+"') ON DUPLICATE KEY UPDATE `mute` = `mute` + 1,`rmute` = '" +reason+"',`mmod`= '"+mod+"',`mdatetime` = '"+sdf.format(date)+" @ "+stf.format(date)+"'";
+            String sqlCreate = "INSERT INTO " + guild + " (ID, `name`, `mute`, `rmute`, `mmod`, `mdatetime`) VALUES (" + id +",'" +uname+"',1,'" + reason + "','"+mod+"', CURRENT_TIMESTAMP) ON DUPLICATE KEY UPDATE `mute` = `mute` + 1,`rmute` = '" +reason+"',`mmod`= '"+mod+"',`mdatetime` = CURRENT_TIMESTAMP;";
 
             // create the java statement
             Statement st = con.createStatement();
@@ -74,7 +75,8 @@ public class MuteCMD implements IntCommand {
 
     @Override
     public String getHelp() {
-        return "Mute an unruley player";
+        return "Mute a member who is misbehaving"+
+                "Usage: `" + Constants.prefix + getInvoke() + " mute <user> <reason>`";
     }
 
     @Override

@@ -50,12 +50,13 @@ public class KickCMD implements IntCommand {
         channel.sendMessage("Success!").queue();
         Config config = new Config(new File("botconfig.json"));
         try {
+            String mod = member.getEffectiveName();
             String id = target.getUser().getId();
             String uname = target.getEffectiveName();
             String guild = event.getGuild().getName();
             Connection con = DriverManager.getConnection(
                     config.getString("host"), config.getString("uname"), config.getString("upass"));
-            String sqlCreate = "INSERT INTO " + guild + " (ID, `name`, `kicks`, `rkicks`) VALUES (" + id +",'" +uname+"',1,'" + reason + "') ON DUPLICATE KEY UPDATE `kicks` = `kicks` + 1,`rkicks` = '" +reason+"'";
+            String sqlCreate = "INSERT INTO " + guild + " (`id`, `name`, `kicks`, `rkicks`, `kmod`, `kdatetime`) VALUES (" + id +",'" +uname+"',1,'" + reason + "','"+mod+"', CURRENT_TIMESTAMP) ON DUPLICATE KEY UPDATE `kicks` = `kicks` + 1,`rkicks` = '" +reason+"', `kmod` = '"+mod+"', `kdatetime` = CURRENT_TIMESTAMP;";
 
             // create the java statement
             Statement st = con.createStatement();

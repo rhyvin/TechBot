@@ -61,7 +61,7 @@ public class UnBanCMD implements IntCommand {
     @Override
     public String getHelp() {
         return "Unbans a user from the server.\n" +
-                "Usage: `" + Constants.prefix + getInvoke() + "<username/user id/username#disc>`";
+                "Usage: `" + Constants.prefix + getInvoke() + " <user id>`";
     }
 
     @Override

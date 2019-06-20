@@ -14,6 +14,8 @@ import java.io.IOException;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.Statement;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.List;
 
 public class BanCMD implements IntCommand {
@@ -49,14 +51,16 @@ public class BanCMD implements IntCommand {
                 .reason(String.format("Banned by: %#s, with reason: %s", event.getAuthor(), reason)).queue();
 
         channel.sendMessage("Success!").queue();
+
         Config config = new Config(new File("botconfig.json"));
         try {
+            String mod = member.getEffectiveName();
             String id = target.getUser().getId();
             String uname = target.getEffectiveName();
             String guild = event.getGuild().getName();
             Connection con = DriverManager.getConnection(
                     config.getString("host"), config.getString("uname"), config.getString("upass"));
-            String sqlCreate = "INSERT INTO " + guild + " (ID, `name`, `bans`, `rbans`) VALUES (" + id +",'" +uname+"',1,'" + reason + "') ON DUPLICATE KEY UPDATE `bans` = `bans` + 1,`rbans` = '" +reason+"'";
+            String sqlCreate = "INSERT INTO " + guild + " (`id`, `name`, `bans`, `rbans`, `bmod`, `bdatetime` ) VALUES (" + id +",'" +uname+"',1,'" + reason + "', '"+ mod +"', CURRENT_TIMESTAMP ) ON DUPLICATE KEY UPDATE `bans` = `bans` + 1,`rbans` = '" +reason+"' , `bmod` = '"+mod+"', `bdatetime` = CURRENT_TIMESTAMP;";
 
             // create the java statement
             Statement st = con.createStatement();
@@ -73,7 +77,7 @@ public class BanCMD implements IntCommand {
     @Override
     public String getHelp() {
         return "Bans a user from the server.\n" +
-                "Usage: `" + Constants.prefix + getInvoke() + "<user> <reason>`";
+                "Usage: `" + Constants.prefix + getInvoke() + " <user> <reason>`";
     }
 
     @Override

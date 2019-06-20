@@ -10,10 +10,34 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dfa2587d-01ee-41ac-8d2a-118dc46116c6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ta/tickets/ticketUpdate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ta/admin_commands/UptimeCMD.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ta/Bot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ta/Bot.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ta/CommandManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ta/CommandManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ta/tickets/ticketCreate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ta/tickets/ticketCreate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ta/Listener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ta/Listener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ta/admin_commands/InstallCMD.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ta/admin_commands/InstallCMD.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ta/admin_commands/RapSheetCMD.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ta/commands/Moderation/RapSheetCMD.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ta/admin_commands/ServerInfoCMD.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ta/admin_commands/ServerInfoCMD.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ta/commands/Fun/DogCMD.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ta/commands/Fun/DogCMD.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ta/commands/Fun/M8ballCMD.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ta/commands/Fun/M8ballCMD.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ta/commands/Fun/VoteCMD.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ta/commands/HelpCMD.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ta/commands/HelpCMD.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ta/commands/Moderation/BanCMD.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ta/commands/Moderation/BanCMD.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ta/commands/Moderation/KickCMD.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ta/commands/Moderation/KickCMD.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ta/commands/Moderation/MuteCMD.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ta/commands/Moderation/MuteCMD.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ta/commands/Moderation/PurgeCMD.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ta/commands/Moderation/PurgeCMD.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ta/commands/Moderation/UnBanCMD.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ta/commands/Moderation/UnBanCMD.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ta/commands/Moderation/UnMuteCMD.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ta/commands/Moderation/UnMuteCMD.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ta/commands/Moderation/WarnCMD.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ta/commands/Moderation/WarnCMD.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ta/commands/PingCMD.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ta/admin_commands/PingCMD.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ta/commands/UserInfoCMD.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ta/commands/Moderation/UserInfoCMD.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ta/tickets/ticketCreate.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ta/tickets/ticketUpdate.java" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -56,25 +80,62 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ta/tickets/ticketUpdate.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ta/Bot.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="248">
-              <caret line="43" column="93" selection-start-line="43" selection-start-column="93" selection-end-line="43" selection-end-column="93" />
+            <state relative-caret-position="136">
+              <caret line="32" column="52" lean-forward="true" selection-start-line="32" selection-start-column="52" selection-end-line="32" selection-end-column="61" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#493#494#0" expanded="true" />
-                <element signature="e#520#521#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ta/commands/HelpCMD.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="157">
+              <caret line="51" column="54" selection-start-line="51" selection-start-column="54" selection-end-line="51" selection-end-column="54" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ta/admin_commands/InstallCMD.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="307">
+              <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#4161#4162#0" expanded="true" />
+                <element signature="e#4240#4241#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.dv8tion/JDA/3.8.3_461/9c3fbe27e2c842b904beaf38e0c49a93d9418c8a/JDA-3.8.3_461-sources.jar!/net/dv8tion/jda/core/requests/restaction/RoleAction.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="273">
+              <caret line="135" column="69" selection-start-line="135" selection-start-column="66" selection-end-line="135" selection-end-column="74" />
+              <folding>
+                <element signature="e#4089#4090#0" expanded="true" />
+                <element signature="e#4164#4165#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/ta/CommandManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="51" column="37" selection-start-line="51" selection-start-column="37" selection-end-line="51" selection-end-column="37" />
+            <state relative-caret-position="284">
+              <caret line="42" lean-forward="true" selection-start-line="42" selection-end-line="42" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -83,16 +144,58 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ta/tickets/ticketCreate.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ta/commands/Moderation/KickCMD.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="78">
-              <caret line="72" column="39" lean-forward="true" selection-start-line="72" selection-start-column="39" selection-end-line="72" selection-end-column="39" />
+            <state relative-caret-position="395">
+              <caret line="58" column="60" selection-start-line="58" selection-start-column="60" selection-end-line="58" selection-end-column="60" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#3727#3728#0" expanded="true" />
-                <element signature="e#3752#3753#0" expanded="true" />
-                <element signature="e#3799#3800#0" expanded="true" />
-                <element signature="e#3830#3831#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ta/commands/Moderation/WarnCMD.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="222">
+              <caret line="59" column="43" selection-start-line="59" selection-start-column="43" selection-end-line="59" selection-end-column="43" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ta/admin_commands/ServerInfoCMD.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="372">
+              <caret line="38" column="49" selection-start-line="38" selection-start-column="49" selection-end-line="38" selection-end-column="49" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ta/Listener.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="443">
+              <caret line="122" column="5" selection-start-line="122" selection-start-column="5" selection-end-line="122" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ta/commands/Moderation/RapSheetCMD.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="141" lean-forward="true" selection-start-line="141" selection-end-line="141" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#7021#7022#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -128,6 +231,8 @@
       <find>reason</find>
       <find>query</find>
       <find>con</find>
+      <find>info</find>
+      <find>time</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -140,45 +245,49 @@
         <option value="$PROJECT_DIR$/src/main/java/ta/util/IntCommand.java" />
         <option value="$PROJECT_DIR$/src/main/java/ta/commands/PingCMD.java" />
         <option value="$PROJECT_DIR$/src/main/resources/logback.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/ta/commands/HelpCMD.java" />
         <option value="$PROJECT_DIR$/src/main/java/ta/admin_commands/ClearCMD.java" />
         <option value="$PROJECT_DIR$/src/main/java/ta/Secrets.java" />
         <option value="$PROJECT_DIR$/src/main/java/ta/commands/Moderation/ClearMSG.java" />
         <option value="$PROJECT_DIR$/src/main/java/ta/commands/CatCMD.java" />
         <option value="$PROJECT_DIR$/src/main/java/ta/commands/DogCMD.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ta/admin_commands/ServerInfoCMD.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ta/commands/Moderation/PurgeCMD.java" />
         <option value="$PROJECT_DIR$/src/main/java/ta/commands/JokeCMD.java" />
         <option value="$PROJECT_DIR$/src/main/java/ta/commands/MemeCMD.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ta/Bot.java" />
         <option value="$PROJECT_DIR$/src/main/java/ta/util/NewMemberJoin.java" />
         <option value="$PROJECT_DIR$/src/main/java/ta/util/FileLogger.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ta/commands/Moderation/UnBanCMD.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ta/commands/Moderation/UnMuteCMD.java" />
         <option value="$PROJECT_DIR$/src/main/java/ta/util/DSecrets.java" />
         <option value="$PROJECT_DIR$/src/main/java/ta/commands/Moderation/DSecretsMod.java" />
         <option value="$PROJECT_DIR$/src/main/java/ta/admin_commands/DSecretsAdm.java" />
         <option value="$PROJECT_DIR$/src/main/java/ta/commands/UserInfoCMD.java" />
         <option value="$PROJECT_DIR$/src/main/java/ta/util/DbAttach.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ta/Listener.java" />
         <option value="$PROJECT_DIR$/src/main/java/ta/admin_commands/RapSheetCMD.java" />
         <option value="$PROJECT_DIR$/src/main/java/ta/admin_commands/GetPrefix.java" />
         <option value="$PROJECT_DIR$/src/main/java/ta/commands/Fun/MemeCMD.java" />
         <option value="$PROJECT_DIR$/src/main/java/ta/commands/Fun/JokeCMD.java" />
         <option value="$PROJECT_DIR$/src/main/java/ta/Constants.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ta/admin_commands/InstallCMD.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ta/commands/Fun/M8ballCMD.java" />
         <option value="$PROJECT_DIR$/src/main/java/ta/commands/Fun/DogCMD.java" />
         <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/src/main/java/ta/commands/Fun/VoteCMD.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ta/commands/Moderation/WarnCMD.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ta/commands/Moderation/MuteCMD.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ta/commands/Moderation/KickCMD.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ta/commands/Moderation/BanCMD.java" />
         <option value="$PROJECT_DIR$/src/main/java/ta/commands/audio/NowPlayingCMD.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ta/tickets/ticketCreate.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ta/CommandManager.java" />
         <option value="$PROJECT_DIR$/src/main/java/ta/tickets/ticketUpdate.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ta/tickets/ticketCreate.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ta/admin_commands/uptimeCMD.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ta/admin_commands/ServerInfoCMD.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ta/admin_commands/PingCMD.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ta/commands/Moderation/PurgeCMD.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ta/commands/Fun/M8ballCMD.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ta/commands/Moderation/UnMuteCMD.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ta/commands/Moderation/UserInfoCMD.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ta/commands/Moderation/UnBanCMD.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ta/commands/Moderation/MuteCMD.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ta/commands/Moderation/BanCMD.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ta/commands/Moderation/KickCMD.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ta/commands/Moderation/WarnCMD.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ta/commands/Moderation/RapSheetCMD.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ta/Bot.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ta/commands/HelpCMD.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ta/Listener.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ta/admin_commands/InstallCMD.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ta/CommandManager.java" />
       </list>
     </option>
   </component>
@@ -189,10 +298,10 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="308" />
-    <option name="y" value="364" />
-    <option name="width" value="697" />
-    <option name="height" value="735" />
+    <option name="x" value="-1589" />
+    <option name="y" value="9" />
+    <option name="width" value="1680" />
+    <option name="height" value="1096" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -200,36 +309,35 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="ta" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TechBot" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="TechnoBot" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
             </path>
             <path>
               <item name="ta" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TechBot" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="TechnoBot" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ta" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TechBot" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="TechnoBot" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
             </path>
             <path>
               <item name="ta" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TechBot" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="TechnoBot" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ta" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TechBot" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="TechnoBot" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -237,7 +345,7 @@
             </path>
             <path>
               <item name="ta" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TechBot" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="TechnoBot" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -246,7 +354,7 @@
             </path>
             <path>
               <item name="ta" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TechBot" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="TechnoBot" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -255,7 +363,37 @@
             </path>
             <path>
               <item name="ta" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TechBot" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="TechnoBot" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="ta" type="462c0819:PsiDirectoryNode" />
+              <item name="commands" type="462c0819:PsiDirectoryNode" />
+              <item name="audio" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ta" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TechnoBot" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="ta" type="462c0819:PsiDirectoryNode" />
+              <item name="commands" type="462c0819:PsiDirectoryNode" />
+              <item name="Fun" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ta" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TechnoBot" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="ta" type="462c0819:PsiDirectoryNode" />
+              <item name="commands" type="462c0819:PsiDirectoryNode" />
+              <item name="Moderation" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ta" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TechnoBot" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -264,33 +402,18 @@
             </path>
             <path>
               <item name="ta" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TechBot" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="TechnoBot" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="ta" type="462c0819:PsiDirectoryNode" />
-              <item name="music" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ta" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TechBot" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="ta" type="462c0819:PsiDirectoryNode" />
-              <item name="tickets" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ta" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TechBot" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -304,10 +427,12 @@
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.21034482" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="settings.editor.selected.configurable" value="editing.templates" />
   </component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="ta.commands.Moderation" />
+      <recent name="ta.admin_commands" />
       <recent name="ta.commands.Fun" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -406,9 +531,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-1688" y="22" width="1696" height="1026" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2065053" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20721272" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Capture Tool" order="3" />
@@ -418,13 +544,13 @@
       <window_info anchor="bottom" id="Messages" order="0" weight="0.32922733" />
       <window_info anchor="bottom" id="Inspection Results" order="1" weight="0.32922733" />
       <window_info anchor="bottom" id="Terminal" order="2" sideWeight="0.49838188" weight="0.32569557" />
-      <window_info anchor="bottom" id="Event Log" order="3" sideWeight="0.50907713" side_tool="true" visible="true" weight="0.2831424" />
+      <window_info anchor="bottom" id="Event Log" order="3" sideWeight="0.50977993" side_tool="true" weight="0.28219485" />
       <window_info anchor="bottom" id="Build" order="4" sideWeight="0.4935275" weight="0.3066089" />
       <window_info anchor="bottom" id="Version Control" order="5" sideWeight="0.49388754" weight="0.33482644" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49919093" weight="0.3281075" />
       <window_info anchor="bottom" id="Message" order="7" />
       <window_info anchor="bottom" id="Find" order="8" />
-      <window_info anchor="bottom" id="Run" order="9" sideWeight="0.49092284" weight="0.2831424" />
+      <window_info anchor="bottom" id="Run" order="9" sideWeight="0.49022004" visible="true" weight="0.28219485" />
       <window_info anchor="bottom" id="Debug" order="10" weight="0.39977604" />
       <window_info anchor="bottom" id="Cvs" order="11" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="12" weight="0.4" />
@@ -498,29 +624,6 @@
     </SUITE>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/ta/util/NewMemberJoin.java" />
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.dv8tion/JDA/3.8.3_461/9c3fbe27e2c842b904beaf38e0c49a93d9418c8a/JDA-3.8.3_461-sources.jar!/net/dv8tion/jda/core/managers/GuildController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="1109" column="37" selection-start-line="1109" selection-start-column="37" selection-end-line="1109" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.dv8tion/JDA/3.8.3_461/9c3fbe27e2c842b904beaf38e0c49a93d9418c8a/JDA-3.8.3_461-sources.jar!/net/dv8tion/jda/core/entities/Guild.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-953">
-          <caret line="371" column="11" selection-start-line="371" selection-start-column="11" selection-end-line="371" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.dv8tion/JDA/3.8.3_461/9c3fbe27e2c842b904beaf38e0c49a93d9418c8a/JDA-3.8.3_461-sources.jar!/net/dv8tion/jda/core/entities/Member.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="120" column="15" selection-start-line="120" selection-start-column="15" selection-end-line="120" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/src.zip!/java/lang/String.java" />
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.dv8tion/JDA/3.8.3_461/9c3fbe27e2c842b904beaf38e0c49a93d9418c8a/JDA-3.8.3_461-sources.jar!/net/dv8tion/jda/core/events/guild/GenericGuildEvent.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -528,16 +631,6 @@
           <folding>
             <element signature="e#1396#1397#0" expanded="true" />
             <element signature="e#1424#1425#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ta/util/IntCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -555,28 +648,6 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/ta/commands/Moderation/DSecretsMod.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/ta/admin_commands/DSecretsAdm.java" />
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/src.zip!/java/util/List.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/ta/commands/HelpCMD.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="33" column="37" selection-start-line="33" selection-start-column="37" selection-end-line="33" selection-end-column="37" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2004#2005#0" expanded="true" />
-            <element signature="e#2033#2034#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ta/admin_commands/ServerInfoCMD.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="29" column="46" lean-forward="true" selection-start-line="29" selection-start-column="46" selection-end-line="29" selection-end-column="46" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ta/commands/audio/QueueCMD.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="493">
@@ -637,65 +708,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ta/commands/Moderation/UnBanCMD.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="46" selection-start-line="46" selection-end-line="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ta/commands/Moderation/UnMuteCMD.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="40" column="74" selection-start-line="40" selection-start-column="74" selection-end-line="40" selection-end-column="74" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1594#1595#0" expanded="true" />
-            <element signature="e#1655#1656#0" expanded="true" />
-            <element signature="e#1702#1703#0" expanded="true" />
-            <element signature="e#1733#1734#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="442">
           <caret line="26" column="48" lean-forward="true" selection-start-line="26" selection-start-column="48" selection-end-line="26" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ta/commands/PingCMD.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="8" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ta/commands/UserInfoCMD.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="429">
-          <caret line="58" column="5" lean-forward="true" selection-start-line="18" selection-start-column="3" selection-end-line="58" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ta/config/ConfigLoader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ta/Constants.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="23" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
         </state>
       </provider>
     </entry>
@@ -706,89 +722,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ta/Listener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="986">
-          <caret line="73" column="9" selection-start-line="73" selection-start-column="9" selection-end-line="73" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ta/Bot.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="36" selection-start-line="5" selection-start-column="36" selection-end-line="5" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ta/commands/Moderation/PurgeCMD.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="834">
-          <caret line="69" column="80" selection-start-line="69" selection-start-column="80" selection-end-line="69" selection-end-column="80" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#3018#3019#0" expanded="true" />
-            <element signature="e#3048#3049#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ta/commands/Moderation/MuteCMD.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="395">
-          <caret line="59" column="44" selection-start-line="59" selection-start-column="44" selection-end-line="59" selection-end-column="44" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ta/commands/Moderation/KickCMD.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="56" column="44" selection-start-line="56" selection-start-column="44" selection-end-line="56" selection-end-column="44" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ta/commands/Fun/MemeCMD.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="442">
           <caret line="26" column="60" selection-start-line="26" selection-start-column="60" selection-end-line="26" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ta/commands/Fun/M8ballCMD.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="34" column="35" selection-start-line="34" selection-start-column="35" selection-end-line="34" selection-end-column="35" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ta/admin_commands/InstallCMD.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="41" column="23" selection-start-line="41" selection-start-column="23" selection-end-line="41" selection-end-column="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ta/commands/Fun/VoteCMD.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="522">
-          <caret line="39" column="51" selection-start-line="39" selection-start-column="51" selection-end-line="39" selection-end-column="51" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -817,20 +754,50 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ta/commands/Moderation/BanCMD.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ta/commands/audio/NowPlayingCMD.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="33" column="41" selection-start-line="33" selection-start-column="41" selection-end-line="33" selection-end-column="69" />
+        <state relative-caret-position="318">
+          <caret line="34" column="7" selection-start-line="34" selection-start-column="7" selection-end-line="34" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ta/tickets/ticketCreate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="191">
+          <caret line="97" column="67" selection-start-line="97" selection-start-column="67" selection-end-line="97" selection-end-column="67" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#5407#5408#0" expanded="true" />
+            <element signature="e#5432#5433#0" expanded="true" />
+            <element signature="e#5479#5480#0" expanded="true" />
+            <element signature="e#5510#5511#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ta/commands/Moderation/WarnCMD.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ta/tickets/ticketUpdate.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="32" column="9" lean-forward="true" selection-start-line="32" selection-start-column="9" selection-end-line="32" selection-end-column="9" />
+        <state relative-caret-position="83">
+          <caret line="28" column="8" selection-start-line="28" selection-start-column="8" selection-end-line="29" selection-end-column="67" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2487#2488#0" expanded="true" />
+            <element signature="e#2525#2526#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ta/admin_commands/UptimeCMD.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="403">
+          <caret line="24" column="16" selection-start-line="24" selection-start-column="16" selection-end-line="24" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#423#424#0" expanded="true" />
+            <element signature="e#450#451#0" expanded="true" />
+            <element signature="e#497#498#0" expanded="true" />
+            <element signature="e#524#525#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -841,61 +808,245 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ta/admin_commands/RapSheetCMD.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ta/commands/Fun/VoteCMD.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="115" column="20" selection-start-line="115" selection-start-column="20" selection-end-line="115" selection-end-column="66" />
+        <state relative-caret-position="442">
+          <caret line="39" column="51" selection-start-line="39" selection-start-column="51" selection-end-line="39" selection-end-column="51" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ta/commands/audio/NowPlayingCMD.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ta/commands/Fun/M8ballCMD.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="423">
+          <caret line="49" column="80" selection-start-line="49" selection-start-column="80" selection-end-line="49" selection-end-column="80" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ta/commands/Moderation/UnMuteCMD.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="372">
+          <caret line="50" column="77" selection-start-line="50" selection-start-column="77" selection-end-line="50" selection-end-column="77" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1702#1703#0" expanded="true" />
+            <element signature="e#1733#1734#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ta/commands/Moderation/PurgeCMD.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="338">
+          <caret line="88" column="129" selection-start-line="88" selection-start-column="129" selection-end-line="89" selection-end-column="74" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#3018#3019#0" expanded="true" />
+            <element signature="e#3048#3049#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ta/commands/Moderation/UserInfoCMD.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="372">
+          <caret line="62" column="57" selection-start-line="62" selection-start-column="57" selection-end-line="62" selection-end-column="57" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ta/Constants.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="23" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ta/util/IntCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ta/config/ConfigLoader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ta/config/Config.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ta/commands/Moderation/UnBanCMD.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="62" column="51" lean-forward="true" selection-start-line="62" selection-start-column="51" selection-end-line="62" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ta/commands/Moderation/MuteCMD.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="202">
+          <caret line="49" column="57" lean-forward="true" selection-start-line="49" selection-start-column="57" selection-end-line="49" selection-end-column="57" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ta/admin_commands/PingCMD.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="78" selection-start-line="20" selection-start-column="78" selection-end-line="20" selection-end-column="78" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ta/commands/Moderation/BanCMD.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="62" column="318" selection-start-line="62" selection-start-column="264" selection-end-line="62" selection-end-column="318" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#3036#3037#0" expanded="true" />
+            <element signature="e#3064#3065#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ta/commands/Moderation/KickCMD.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="395">
+          <caret line="58" column="60" selection-start-line="58" selection-start-column="60" selection-end-line="58" selection-end-column="60" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ta/commands/Moderation/WarnCMD.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="222">
+          <caret line="59" column="43" selection-start-line="59" selection-start-column="43" selection-end-line="59" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ta/commands/Moderation/RapSheetCMD.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="141" lean-forward="true" selection-start-line="141" selection-end-line="141" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#7021#7022#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ta/admin_commands/ServerInfoCMD.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="372">
+          <caret line="38" column="49" selection-start-line="38" selection-start-column="49" selection-end-line="38" selection-end-column="49" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/src.zip!/java/time/Instant.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="545">
+          <caret line="1219" column="10" lean-forward="true" selection-start-line="1219" selection-start-column="10" selection-end-line="1219" selection-end-column="10" />
+          <folding>
+            <element signature="e#56110#56111#0" expanded="true" />
+            <element signature="e#56168#56169#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ta/commands/HelpCMD.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="157">
+          <caret line="51" column="54" selection-start-line="51" selection-start-column="54" selection-end-line="51" selection-end-column="54" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.dv8tion/JDA/3.8.3_461/9c3fbe27e2c842b904beaf38e0c49a93d9418c8a/JDA-3.8.3_461-sources.jar!/net/dv8tion/jda/core/managers/GuildController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-203">
+          <caret line="1920" column="22" selection-start-line="1920" selection-start-column="22" selection-end-line="1920" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ta/Listener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="443">
+          <caret line="122" column="5" selection-start-line="122" selection-start-column="5" selection-end-line="122" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ta/Bot.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
-          <caret line="35" column="44" selection-start-line="35" selection-start-column="44" selection-end-line="35" selection-end-column="44" />
+          <caret line="32" column="52" lean-forward="true" selection-start-line="32" selection-start-column="52" selection-end-line="32" selection-end-column="61" />
           <folding>
-            <element signature="e#2033#2034#0" expanded="true" />
-            <element signature="e#2091#2092#0" expanded="true" />
-            <element signature="e#2138#2139#0" expanded="true" />
-            <element signature="e#2165#2166#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.dv8tion/JDA/3.8.3_461/9c3fbe27e2c842b904beaf38e0c49a93d9418c8a/JDA-3.8.3_461-sources.jar!/net/dv8tion/jda/core/requests/restaction/RoleAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="135" column="69" selection-start-line="135" selection-start-column="66" selection-end-line="135" selection-end-column="74" />
+          <folding>
+            <element signature="e#4089#4090#0" expanded="true" />
+            <element signature="e#4164#4165#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ta/admin_commands/InstallCMD.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="307">
+          <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#4161#4162#0" expanded="true" />
+            <element signature="e#4240#4241#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ta/CommandManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="51" column="37" selection-start-line="51" selection-start-column="37" selection-end-line="51" selection-end-column="37" />
+        <state relative-caret-position="284">
+          <caret line="42" lean-forward="true" selection-start-line="42" selection-end-line="42" />
           <folding>
             <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ta/tickets/ticketCreate.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="78">
-          <caret line="72" column="39" lean-forward="true" selection-start-line="72" selection-start-column="39" selection-end-line="72" selection-end-column="39" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#3727#3728#0" expanded="true" />
-            <element signature="e#3752#3753#0" expanded="true" />
-            <element signature="e#3799#3800#0" expanded="true" />
-            <element signature="e#3830#3831#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ta/tickets/ticketUpdate.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="248">
-          <caret line="43" column="93" selection-start-line="43" selection-start-column="93" selection-end-line="43" selection-end-column="93" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#493#494#0" expanded="true" />
-            <element signature="e#520#521#0" expanded="true" />
           </folding>
         </state>
       </provider>

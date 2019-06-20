@@ -1,9 +1,10 @@
 package ta.commands.Fun;
-/*
+
 import me.duncte123.botcommons.messaging.EmbedUtils;
 import me.duncte123.botcommons.web.WebUtils;
 import net.dv8tion.jda.core.entities.MessageEmbed;
 import net.dv8tion.jda.core.events.message.guild.GuildMessageReceivedEvent;
+import org.json.JSONObject;
 import ta.util.IntCommand;
 
 import java.util.List;
@@ -12,7 +13,8 @@ public class DogCMD implements IntCommand {
     @Override
     public void handle(List<String> args, GuildMessageReceivedEvent event) {
        WebUtils.ins.getJSONObject("https://random.dog/woof.json").async( (json) -> {
-            String url = json.getString("url");
+            String url = String.valueOf(json.path("url"));
+
             MessageEmbed embed = EmbedUtils.embedImage(url).build();
             //TODO: Make a permission check to see if the bot can send embeds if not, send plain text.
             event.getChannel().sendMessage(embed).queue();
@@ -30,4 +32,4 @@ public class DogCMD implements IntCommand {
         return "dog";
     }
 }
-*/
+

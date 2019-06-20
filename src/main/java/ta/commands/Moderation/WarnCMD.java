@@ -4,6 +4,7 @@ import net.dv8tion.jda.core.Permission;
 import net.dv8tion.jda.core.entities.Member;
 import net.dv8tion.jda.core.entities.TextChannel;
 import net.dv8tion.jda.core.events.message.guild.GuildMessageReceivedEvent;
+import ta.Constants;
 import ta.config.Config;
 import ta.util.IntCommand;
 
@@ -59,7 +60,7 @@ public class WarnCMD implements IntCommand {
             long datetime = date.getTime();
             Connection con = DriverManager.getConnection(
                     config.getString("host"), config.getString("uname"), config.getString("upass"));
-            String sqlCreate = "INSERT INTO " + guild + " (ID, `name`, `warnings`, `rwarnings`, `wmod`, `wdatetime`) VALUES (" + id +",'" +uname+"',1,'" + reason + "','"+mod+"','"+sdf.format(date)+" @ "+stf.format(date)+"') ON DUPLICATE KEY UPDATE `warnings` = `warnings` + 1,`rwarnings` = '" +reason+"',`wmod`= '"+mod+"',`wdatetime` = '"+sdf.format(date)+" @ "+stf.format(date)+"'";
+            String sqlCreate = "INSERT INTO " + guild + " (`id`, `name`, `warnings`, `rwarnings`, `wmod`, `wdatetime`) VALUES (" + id +",'" +uname+"',1,'" + reason + "', '"+ mod +"',CURRENT_TIMESTAMP) ON DUPLICATE KEY UPDATE `warnings` = `warnings` + 1,`rwarnings` = '" +reason+"',`wmod`= '"+mod+"',`wdatetime` = CURRENT_TIMESTAMP;";
 
             // create the java statement
             Statement st = con.createStatement();
@@ -75,7 +76,8 @@ public class WarnCMD implements IntCommand {
 
     @Override
     public String getHelp() {
-        return "Warn a member against certain actions.";
+        return "Warn a member against certain actions."+
+                "Usage: `" + Constants.prefix + getInvoke() + " warn <user> <reason>`";
     }
 
     @Override

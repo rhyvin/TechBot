@@ -8,16 +8,15 @@ import java.util.regex.Pattern;
 import net.dv8tion.jda.core.events.message.guild.GuildMessageReceivedEvent;
 import org.jetbrains.annotations.NotNull;
 import ta.admin_commands.InstallCMD;
-import ta.admin_commands.RapSheetCMD;
+import ta.admin_commands.UptimeCMD;
+import ta.commands.Moderation.RapSheetCMD;
 import ta.admin_commands.ServerInfoCMD;
 import ta.commands.HelpCMD;
 import ta.commands.Moderation.*;
-import ta.commands.PingCMD;
-import ta.commands.UserInfoCMD;
+import ta.admin_commands.PingCMD;
+import ta.commands.Moderation.UserInfoCMD;
 import ta.commands.Fun.*;
 import ta.commands.audio.*;
-import ta.tickets.ticketCreate;
-import ta.tickets.ticketUpdate;
 import ta.util.IntCommand;
 
 public class CommandManager {
@@ -25,21 +24,29 @@ public class CommandManager {
     private final Map<String, IntCommand> commands = new HashMap<>();
 
     CommandManager(Random random) {
+        //Fun Commands
         addCommand(new PingCMD());
         addCommand(new HelpCMD(this));
+        addCommand(new M8ballCMD());
         addCommand(new CatCMD());
+
+        //Moderation commands
         addCommand(new UserInfoCMD());
         addCommand(new BanCMD());
         addCommand(new KickCMD());
         addCommand(new UnBanCMD());
-        addCommand(new ServerInfoCMD());
         addCommand(new PurgeCMD());
-        addCommand(new M8ballCMD());
         addCommand(new MuteCMD());
         addCommand(new UnMuteCMD());
         addCommand(new RapSheetCMD());
         addCommand(new WarnCMD());
+
+        //Administrator Commands
         addCommand(new InstallCMD());
+        addCommand(new ServerInfoCMD());
+        addCommand(new UptimeCMD());
+
+        //Music player Commands
         addCommand(new JoinCMD());
         addCommand(new LeaveCMD());
         addCommand(new PlayCMD());
@@ -47,9 +54,6 @@ public class CommandManager {
         addCommand(new SkipCMD());
         addCommand(new StopCMD());
         addCommand(new NowPlayingCMD());
-        addCommand(new VoteCMD());
-        addCommand(new ticketCreate());
-        addCommand(new ticketUpdate());
     }
 
     private void addCommand(IntCommand command) {

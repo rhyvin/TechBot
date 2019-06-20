@@ -1,4 +1,4 @@
-package ta.admin_commands;
+package ta.commands.Moderation;
 
 import com.jagrosh.jdautilities.commons.utils.FinderUtil;
 import me.duncte123.botcommons.messaging.EmbedUtils;
@@ -14,6 +14,9 @@ import java.io.File;
 import java.io.IOException;
 import java.sql.*;
 import java.time.format.DateTimeFormatter;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -64,20 +67,32 @@ public class RapSheetCMD implements IntCommand {
                     if (rs.wasNull()){
                         rwar = "";
                     }
+                    if (!rs.wasNull()){
+                        rwar = " **Last Reason:** `" + rwar + "` ";
+                    }
                     String kik = rs.getString("kicks");
                     String rkik = rs.getString("rkicks");
                     if (rs.wasNull()){
                         rkik = "";
+                    }
+                    if (!rs.wasNull()){
+                        rkik = " **Last Reason:** `" + rkik + "` ";
                     }
                     String ban = rs.getString("bans");
                     String rban = rs.getString("rbans");
                     if (rs.wasNull()){
                         rban = "";
                     }
+                    if (!rs.wasNull()){
+                        rban = " **Last Reason:** `" + rban + "` ";
+                    }
                     String mut = rs.getString("mute");
                     String rmute = rs.getString("rmute");
                     if (rs.wasNull()){
                         rmute = "";
+                    }
+                    if (!rs.wasNull()){
+                        rmute = " **Last Reason:** `" + rmute + "` ";
                     }
                     String mdatetime = rs.getString("mdatetime");
                     if (rs.wasNull()){
@@ -87,6 +102,9 @@ public class RapSheetCMD implements IntCommand {
                     if (rs.wasNull()){
                         mmod = "";
                     }
+                    if (!rs.wasNull()){
+                        mmod = " **Moderator:** " + mmod;
+                    }
                     String wdatetime = rs.getString("wdatetime");
                     if (rs.wasNull()){
                         wdatetime = "";
@@ -94,6 +112,9 @@ public class RapSheetCMD implements IntCommand {
                     String wmod =rs.getString("wmod");
                     if (rs.wasNull()){
                         wmod = "";
+                    }
+                    if (!rs.wasNull()){
+                        wmod = " **Moderator:** "+ wmod;
                     }
                     String kdatetime = rs.getString("kdatetime");
                     if (rs.wasNull()){
@@ -103,6 +124,9 @@ public class RapSheetCMD implements IntCommand {
                     if (rs.wasNull()){
                         kmod = "";
                     }
+                    if (!rs.wasNull()){
+                        kmod = " **Moderator:** " + kmod;
+                    }
                     String bdatetime = rs.getString("bdatetime");
                     if (rs.wasNull()){
                         bdatetime = "";
@@ -111,6 +135,9 @@ public class RapSheetCMD implements IntCommand {
                     if (rs.wasNull()){
                         bmod = "";
                     }
+                    if (!rs.wasNull()){
+                        bmod = " **Moderator:** " + bmod ;
+                    }
 
 
                     MessageEmbed embed = EmbedUtils.defaultEmbed()
@@ -118,12 +145,12 @@ public class RapSheetCMD implements IntCommand {
                             .setThumbnail(user.getEffectiveAvatarUrl().replaceFirst("gif", "png"))
                             .addField("**"+nam+"**" + " **(ID:"+sid+")**","", false)
                             .addField("__**MODERATION STATISTICS**__", "", true)
-                            .addField("Warnings: " + war,  wdatetime+" "+wmod+" "+rwar, false)
-                            .addField("Mutes: " + mut, mdatetime+" "+mmod+" "+rmute, false)
-                            .addField("Kicks: " + kik, kdatetime+" "+kmod+" "+ rkik, false)
-                            .addField("Bans: " + ban, bdatetime+" "+bmod+" "+ rban, false)
+                            .addField("Warnings: " + war,  wmod+" "+rwar + wdatetime+"GMT", false)
+                            .addField("Mutes: " + mut, mmod+" "+rmute + mdatetime+"GMT", false)
+                            .addField("Kicks: " + kik, kmod+" "+ rkik + kdatetime+"GMT", false)
+                            .addField("Bans: " + ban, bmod+" "+ rban + bdatetime+"GMT", false)
                             .addField("Joined Server: ", member.getJoinDate().format(DateTimeFormatter.RFC_1123_DATE_TIME), true)
-                            .addField("Time Since Moderation: ", "TODO", true)
+                            //.addField("Time Since Moderation: ", String.valueOf(latest), true)
                             .build();
 
                     event.getChannel().sendMessage(embed).queue();
@@ -139,7 +166,8 @@ public class RapSheetCMD implements IntCommand {
 
         @Override
     public String getHelp() {
-        return "Displays information about a specific user.";
+        return "Displays Moderation information about a specific user."+
+                "Usage: `" + Constants.prefix + getInvoke() + " rapsheet <user>`";
     }
 
     @Override

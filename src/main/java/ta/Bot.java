@@ -2,9 +2,8 @@ package ta;
 
 import me.duncte123.botcommons.messaging.EmbedUtils;
 import me.duncte123.botcommons.web.WebUtils;
-import net.dv8tion.jda.core.AccountType;
+import net.dv8tion.jda.bot.sharding.DefaultShardManagerBuilder;
 import net.dv8tion.jda.core.EmbedBuilder;
-import net.dv8tion.jda.core.JDABuilder;
 import net.dv8tion.jda.core.entities.Game;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -15,6 +14,7 @@ import java.awt.*;
 import java.io.File;
 import java.io.IOException;
 import java.time.Instant;
+import java.time.ZoneOffset;
 import java.util.Random;
 
 public class Bot {
@@ -30,21 +30,20 @@ public class Bot {
         WebUtils.setUserAgent("Mozilla/5.0 TechnoAnomaly Techno Helper Bot/Rhyvin#1694");
         EmbedUtils.setEmbedBuilder(
                 () -> new EmbedBuilder()
-                        .setColor(getRandomColor())
+                        .setColor(Color.getHSBColor(10,100,56))
                         .setFooter("Techno Anomaly", null)
-                        .setTimestamp(Instant.now())
-
+                        .setTimestamp(Instant.now().atOffset(ZoneOffset.UTC))
         );
 
         try {
             logger.info("Booting");
-            new JDABuilder(AccountType.BOT)
+            new DefaultShardManagerBuilder()
                     .setToken(config.getString("token"))
-                    .setGame(Game.watching("for trouble."))
-                    .addEventListener(listener)
-                    .build().awaitReady();
+                    .setGame(Game.streaming("Follow TechnoAnomaly", "http://technoanomaly.com"))
+                    .addEventListeners(listener)
+                    .build();
             logger.info("Running");
-        } catch (LoginException | InterruptedException e) {
+        } catch (LoginException e) {
             e.printStackTrace();
         }
     }

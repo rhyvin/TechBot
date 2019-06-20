@@ -1,4 +1,4 @@
-package ta.commands;
+package ta.admin_commands;
 
 import net.dv8tion.jda.core.events.message.guild.GuildMessageReceivedEvent;
 import ta.Constants;
@@ -18,7 +18,7 @@ public class PingCMD implements IntCommand {
 
     @Override
     public String getHelp() {
-        return "pong!\n" +
+        return "pong!\n Provides round trip time from Discord to bot and back." +
                 "Usage: `" + Constants.prefix +getInvoke() + "`";
     }
 

@@ -36,7 +36,7 @@ public class ServerInfoCMD implements IntCommand {
         EmbedBuilder embed = EmbedUtils.defaultEmbed()
             .setTitle("Server info for" + guild.getName())
             .setThumbnail(guild.getIconUrl())
-                .addField("General Info", "genInfo", false )
+                .addField("General Info", genInfo, false )
                 .addField("Role and Member Counts",memberInfo, false)
             ;
         event.getChannel().sendMessage(embed.build()).queue();

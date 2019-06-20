@@ -31,7 +31,10 @@ class Listener extends ListenerAdapter {
     String[] lmessages = {
             "[member]goes bye, bye.",
             "l8r g8r",
-            "May the force be with you [member]."
+            "May the force be with you [member].",
+            "Bye Felicia!",
+            "[member],really your leaving us? Rude.",
+            "[member] your mother was a hampster, and your father smelled of elderberries!"
     };
 
     private final CommandManager manager;
@@ -106,14 +109,12 @@ class Listener extends ListenerAdapter {
         Random rand = new Random();
         int number = rand.nextInt(lmessages.length);
 
-        EmbedBuilder join = new EmbedBuilder();
-        join.setColor(0x66d8ff);
-        join.setDescription(lmessages[number].replace("[member]", event.getMember().getAsMention()));
+        EmbedBuilder leave = new EmbedBuilder();
+        leave.setColor(0x66d8ff);
+        leave.setDescription(lmessages[number].replace("[member]", event.getMember().getAsMention()));
 
-        event.getGuild().getDefaultChannel().sendMessage(join.build()).queue();
+        event.getGuild().getDefaultChannel().sendMessage(leave.build()).queue();
 
-        // Add role
-        event.getGuild().getController().addRolesToMember(event.getMember(), event.getGuild().getRolesByName("Member", true)).complete();
     }
 
     private void shutdown(JDA jda){

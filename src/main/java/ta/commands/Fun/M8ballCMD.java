@@ -2,6 +2,7 @@ package ta.commands.Fun;
 
 import net.dv8tion.jda.core.EmbedBuilder;
 import net.dv8tion.jda.core.events.message.guild.GuildMessageReceivedEvent;
+import ta.Constants;
 import ta.util.IntCommand;
 
 import java.util.List;
@@ -45,7 +46,8 @@ public class M8ballCMD implements IntCommand {
 
     @Override
     public String getHelp() {
-        return "Its just like shaking your own Magic 8 ball!";
+        return "Its just like shaking your own Magic 8 ball!"+
+                "Usage: `" + Constants.prefix + getInvoke() + " 8ball <question>`";
     }
 
     @Override

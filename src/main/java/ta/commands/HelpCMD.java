@@ -7,6 +7,7 @@ import ta.CommandManager;
 import ta.Constants;
 import ta.util.IntCommand;
 
+import java.awt.*;
 import java.util.List;
 
 
@@ -46,7 +47,9 @@ public class HelpCMD implements IntCommand {
 
     private void  generateAndSendEmbeds(GuildMessageReceivedEvent event) {
 
-        EmbedBuilder builder = EmbedUtils.defaultEmbed().setTitle("A list of all my commands:");
+        EmbedBuilder builder = EmbedUtils.defaultEmbed()
+                .setTitle("A list of all my commands:")
+                .setColor(Color.getHSBColor(10,100,56));
 
         StringBuilder descriptionBuilder = builder.getDescriptionBuilder();
 
@@ -62,8 +65,8 @@ public class HelpCMD implements IntCommand {
 
     @Override
     public String getHelp() {
-        return "SHows a list of all the commands.\n" +
-                "Usage: `" + Constants.prefix + getInvoke() + " [command`";
+        return "Shows a list of all the commands.\n" +
+                "Usage: `" + Constants.prefix + getInvoke() + " [command]`";
     }
 
     @Override
