@@ -10,34 +10,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dfa2587d-01ee-41ac-8d2a-118dc46116c6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ta/admin_commands/UptimeCMD.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ta/admin_commands/setPFXCMD.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ta/Bot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ta/Bot.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ta/CommandManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ta/CommandManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ta/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ta/Constants.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ta/Listener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ta/Listener.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ta/admin_commands/InstallCMD.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ta/admin_commands/InstallCMD.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ta/admin_commands/RapSheetCMD.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ta/commands/Moderation/RapSheetCMD.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ta/admin_commands/ServerInfoCMD.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ta/admin_commands/ServerInfoCMD.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ta/commands/Fun/DogCMD.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ta/commands/Fun/DogCMD.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ta/commands/Fun/M8ballCMD.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ta/commands/Fun/M8ballCMD.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ta/commands/Fun/VoteCMD.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ta/commands/HelpCMD.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ta/commands/HelpCMD.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ta/commands/Moderation/BanCMD.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ta/commands/Moderation/BanCMD.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ta/commands/Moderation/KickCMD.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ta/commands/Moderation/KickCMD.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ta/commands/Moderation/MuteCMD.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ta/commands/Moderation/MuteCMD.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ta/commands/Moderation/PurgeCMD.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ta/commands/Moderation/PurgeCMD.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ta/commands/Moderation/UnBanCMD.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ta/commands/Moderation/UnBanCMD.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ta/commands/Moderation/UnMuteCMD.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ta/commands/Moderation/UnMuteCMD.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ta/commands/Moderation/WarnCMD.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ta/commands/Moderation/WarnCMD.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ta/commands/PingCMD.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ta/admin_commands/PingCMD.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ta/commands/UserInfoCMD.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ta/commands/Moderation/UserInfoCMD.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ta/tickets/ticketCreate.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ta/tickets/ticketUpdate.java" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -84,7 +62,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/ta/Bot.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="136">
-              <caret line="32" column="52" lean-forward="true" selection-start-line="32" selection-start-column="52" selection-end-line="32" selection-end-column="61" />
+              <caret line="32" column="52" selection-start-line="32" selection-start-column="52" selection-end-line="32" selection-end-column="61" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -105,37 +83,49 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ta/admin_commands/InstallCMD.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ta/CommandManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="307">
-              <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
+            <state relative-caret-position="18">
+              <caret line="58" column="49" lean-forward="true" selection-start-line="58" selection-start-column="49" selection-end-line="58" selection-end-column="49" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#4161#4162#0" expanded="true" />
-                <element signature="e#4240#4241#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.dv8tion/JDA/3.8.3_461/9c3fbe27e2c842b904beaf38e0c49a93d9418c8a/JDA-3.8.3_461-sources.jar!/net/dv8tion/jda/core/requests/restaction/RoleAction.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="273">
-              <caret line="135" column="69" selection-start-line="135" selection-start-column="66" selection-end-line="135" selection-end-column="74" />
-              <folding>
-                <element signature="e#4089#4090#0" expanded="true" />
-                <element signature="e#4164#4165#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ta/CommandManager.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ta/admin_commands/setPFXCMD.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="284">
-              <caret line="42" lean-forward="true" selection-start-line="42" selection-end-line="42" />
+            <state relative-caret-position="340">
+              <caret line="20" column="68" selection-start-line="20" selection-start-column="68" selection-end-line="20" selection-end-column="68" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1444#1445#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ta/admin_commands/InstallCMD.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-393">
+              <caret line="34" column="60" lean-forward="true" selection-start-line="34" selection-start-column="60" selection-end-line="34" selection-end-column="60" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#4267#4268#0" expanded="true" />
+                <element signature="e#4346#4347#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ta/admin_commands/PingCMD.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="357">
+              <caret line="21" column="65" lean-forward="true" selection-start-line="20" selection-start-column="8" selection-end-line="21" selection-end-column="65" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -144,31 +134,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ta/commands/Moderation/KickCMD.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ta/Constants.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="395">
-              <caret line="58" column="60" selection-start-line="58" selection-start-column="60" selection-end-line="58" selection-end-column="60" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ta/commands/Moderation/WarnCMD.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="222">
-              <caret line="59" column="43" selection-start-line="59" selection-start-column="43" selection-end-line="59" selection-end-column="43" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ta/admin_commands/ServerInfoCMD.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="372">
-              <caret line="38" column="49" selection-start-line="38" selection-start-column="49" selection-end-line="38" selection-end-column="49" />
+            <state relative-caret-position="17">
+              <caret line="1" selection-start-line="1" selection-end-line="1" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -179,23 +148,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/ta/Listener.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="443">
-              <caret line="122" column="5" selection-start-line="122" selection-start-column="5" selection-end-line="122" selection-end-column="5" />
+            <state relative-caret-position="381">
+              <caret line="82" column="27" lean-forward="true" selection-start-line="82" selection-start-column="27" selection-end-line="82" selection-end-column="27" />
               <folding>
                 <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ta/commands/Moderation/RapSheetCMD.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="141" lean-forward="true" selection-start-line="141" selection-end-line="141" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#7021#7022#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -263,7 +219,6 @@
         <option value="$PROJECT_DIR$/src/main/java/ta/admin_commands/GetPrefix.java" />
         <option value="$PROJECT_DIR$/src/main/java/ta/commands/Fun/MemeCMD.java" />
         <option value="$PROJECT_DIR$/src/main/java/ta/commands/Fun/JokeCMD.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ta/Constants.java" />
         <option value="$PROJECT_DIR$/src/main/java/ta/commands/Fun/DogCMD.java" />
         <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/src/main/java/ta/commands/Fun/VoteCMD.java" />
@@ -285,9 +240,11 @@
         <option value="$PROJECT_DIR$/src/main/java/ta/commands/Moderation/RapSheetCMD.java" />
         <option value="$PROJECT_DIR$/src/main/java/ta/Bot.java" />
         <option value="$PROJECT_DIR$/src/main/java/ta/commands/HelpCMD.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ta/Listener.java" />
         <option value="$PROJECT_DIR$/src/main/java/ta/admin_commands/InstallCMD.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ta/Listener.java" />
         <option value="$PROJECT_DIR$/src/main/java/ta/CommandManager.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ta/admin_commands/setPFXCMD.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ta/Constants.java" />
       </list>
     </option>
   </component>
@@ -518,7 +475,14 @@
       <option name="project" value="LOCAL" />
       <updated>1559878784263</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Optimizations&#10;&#10;Removed ticketing system, will implement in separate bot. Removed nonworking commands, and optimized install, and Moderation commands.">
+      <created>1561064696619</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1561064696619</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TodoView">
@@ -534,7 +498,7 @@
     <frame x="-1688" y="22" width="1696" height="1026" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20721272" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20721272" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Capture Tool" order="3" />
@@ -612,7 +576,8 @@
     </ignored-roots>
     <MESSAGE value="Completely refactored Discord Bot.&#10;&#10;Bot now has been renamed, began to factor out Admin command, normal commands, Mod commands, and utilities." />
     <MESSAGE value="MySQL Database integration&#10;&#10;Configured mysql integration with TechBot." />
-    <option name="LAST_COMMIT_MESSAGE" value="MySQL Database integration&#10;&#10;Configured mysql integration with TechBot." />
+    <MESSAGE value="Optimizations&#10;&#10;Removed ticketing system, will implement in separate bot. Removed nonworking commands, and optimized install, and Moderation commands." />
+    <option name="LAST_COMMIT_MESSAGE" value="Optimizations&#10;&#10;Removed ticketing system, will implement in separate bot. Removed nonworking commands, and optimized install, and Moderation commands." />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
@@ -624,17 +589,6 @@
     </SUITE>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.dv8tion/JDA/3.8.3_461/9c3fbe27e2c842b904beaf38e0c49a93d9418c8a/JDA-3.8.3_461-sources.jar!/net/dv8tion/jda/core/events/guild/GenericGuildEvent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="23" column="21" selection-start-line="23" selection-start-column="21" selection-end-line="23" selection-end-column="21" />
-          <folding>
-            <element signature="e#1396#1397#0" expanded="true" />
-            <element signature="e#1424#1425#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ta/util/FileLogger.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-128">
@@ -862,13 +816,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ta/Constants.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="23" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ta/util/IntCommand.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -910,16 +857,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ta/admin_commands/PingCMD.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="78" selection-start-line="20" selection-start-column="78" selection-end-line="20" selection-end-column="78" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ta/commands/Moderation/BanCMD.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
@@ -932,40 +869,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ta/commands/Moderation/KickCMD.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="395">
-          <caret line="58" column="60" selection-start-line="58" selection-start-column="60" selection-end-line="58" selection-end-column="60" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ta/commands/Moderation/WarnCMD.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="222">
-          <caret line="59" column="43" selection-start-line="59" selection-start-column="43" selection-end-line="59" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ta/commands/Moderation/RapSheetCMD.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
-          <caret line="141" lean-forward="true" selection-start-line="141" selection-end-line="141" />
+          <caret line="141" selection-start-line="141" selection-end-line="141" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#7021#7022#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ta/admin_commands/ServerInfoCMD.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="372">
-          <caret line="38" column="49" selection-start-line="38" selection-start-column="49" selection-end-line="38" selection-end-column="49" />
-          <folding>
-            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -998,20 +908,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ta/Listener.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ta/Bot.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="443">
-          <caret line="122" column="5" selection-start-line="122" selection-start-column="5" selection-end-line="122" selection-end-column="5" />
+        <state relative-caret-position="136">
+          <caret line="32" column="52" selection-start-line="32" selection-start-column="52" selection-end-line="32" selection-end-column="61" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ta/Bot.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ta/commands/Moderation/WarnCMD.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="32" column="52" lean-forward="true" selection-start-line="32" selection-start-column="52" selection-end-line="32" selection-end-column="61" />
+        <state relative-caret-position="222">
+          <caret line="59" column="43" selection-start-line="59" selection-start-column="43" selection-end-line="59" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ta/admin_commands/ServerInfoCMD.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="372">
+          <caret line="38" column="49" selection-start-line="38" selection-start-column="49" selection-end-line="38" selection-end-column="49" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ta/commands/Moderation/KickCMD.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="395">
+          <caret line="58" column="60" selection-start-line="58" selection-start-column="60" selection-end-line="58" selection-end-column="60" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1020,8 +947,8 @@
     </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.dv8tion/JDA/3.8.3_461/9c3fbe27e2c842b904beaf38e0c49a93d9418c8a/JDA-3.8.3_461-sources.jar!/net/dv8tion/jda/core/requests/restaction/RoleAction.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="135" column="69" selection-start-line="135" selection-start-column="66" selection-end-line="135" selection-end-column="74" />
+        <state relative-caret-position="205">
+          <caret line="97" column="22" selection-start-line="97" selection-start-column="22" selection-end-line="97" selection-end-column="22" />
           <folding>
             <element signature="e#4089#4090#0" expanded="true" />
             <element signature="e#4164#4165#0" expanded="true" />
@@ -1029,24 +956,65 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ta/admin_commands/InstallCMD.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ta/Listener.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="307">
-          <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
+        <state relative-caret-position="381">
+          <caret line="82" column="27" lean-forward="true" selection-start-line="82" selection-start-column="27" selection-end-line="82" selection-end-column="27" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#4161#4162#0" expanded="true" />
-            <element signature="e#4240#4241#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ta/CommandManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="284">
-          <caret line="42" lean-forward="true" selection-start-line="42" selection-end-line="42" />
+        <state relative-caret-position="18">
+          <caret line="58" column="49" lean-forward="true" selection-start-line="58" selection-start-column="49" selection-end-line="58" selection-end-column="49" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ta/admin_commands/PingCMD.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="65" lean-forward="true" selection-start-line="20" selection-start-column="8" selection-end-line="21" selection-end-column="65" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ta/admin_commands/InstallCMD.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-393">
+          <caret line="34" column="60" lean-forward="true" selection-start-line="34" selection-start-column="60" selection-end-line="34" selection-end-column="60" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#4267#4268#0" expanded="true" />
+            <element signature="e#4346#4347#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ta/Constants.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ta/admin_commands/setPFXCMD.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="68" selection-start-line="20" selection-start-column="68" selection-end-line="20" selection-end-column="68" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1444#1445#0" expanded="true" />
           </folding>
         </state>
       </provider>

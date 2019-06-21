@@ -72,8 +72,10 @@ public class CommandManager {
     }
 
     void handleCommand(GuildMessageReceivedEvent event) {
+        final String prefix = Constants.PREFIXES.get(event.getGuild().getIdLong());
+
         final String[] split = event.getMessage().getContentRaw().replaceFirst(
-                "(?i)" + Pattern.quote(Constants.prefix), "").split("\\s+");
+                "(?i)" + Pattern.quote(prefix), "").split("\\s+");
         final String invoke = split[0].toLowerCase();
 
         if(commands.containsKey(invoke)) {

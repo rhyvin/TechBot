@@ -28,8 +28,11 @@ public class InstallCMD implements IntCommand {
         event.getGuild().getController().createRole().setName("Members").setColor(0x05920F).setPermissions(Permission.MESSAGE_READ, Permission.MESSAGE_HISTORY, Permission.CREATE_INSTANT_INVITE, Permission.NICKNAME_CHANGE, Permission.MESSAGE_WRITE, Permission.MESSAGE_TTS, Permission.MESSAGE_EMBED_LINKS, Permission.MESSAGE_ATTACH_FILES, Permission.MESSAGE_MENTION_EVERYONE, Permission.MESSAGE_EXT_EMOJI, Permission.MESSAGE_ADD_REACTION, Permission.VOICE_CONNECT, Permission.VOICE_SPEAK, Permission.VOICE_USE_VAD).setMentionable(false).queue();
         event.getChannel().sendMessage("Role Members created").queue();
 
-        event.getGuild().getController().createRole().setName("muted").setColor(0xBF0000).setPermissions(Permission.MESSAGE_READ, Permission.MESSAGE_HISTORY).setMentionable(false).queue();
+        event.getGuild().getController().createRole().setName("muted").setColor(0xBF0000).setPermissions(Permission.MESSAGE_READ, Permission.MESSAGE_HISTORY).setMentionable(false).setHoisted(true).queue();
         event.getChannel().sendMessage("Role muted created").queue();
+
+        //Create Basic Channels
+        event.getGuild().getController().createTextChannel("");
 
 
         //Create database for discord server defined by 'guild'
