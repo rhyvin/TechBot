@@ -1,10 +1,10 @@
 package ta.commands.Fun;
 
+import net.dv8tion.jda.core.events.message.guild.GuildMessageReceivedEvent;
 import ta.util.IntCommand;
 import me.duncte123.botcommons.messaging.EmbedUtils;
 import me.duncte123.botcommons.web.WebUtils;
 import net.dv8tion.jda.core.entities.MessageEmbed;
-import net.dv8tion.jda.core.events.message.guild.GuildMessageReceivedEvent;
 
 
 import java.util.List;

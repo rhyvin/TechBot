@@ -1,5 +1,6 @@
 package ta.commands.Fun;
-/*
+
+import com.fasterxml.jackson.databind.JsonNode;
 import me.duncte123.botcommons.messaging.EmbedUtils;
 import me.duncte123.botcommons.web.WebUtils;
 import net.dv8tion.jda.core.entities.MessageEmbed;
@@ -7,24 +8,18 @@ import net.dv8tion.jda.core.events.message.guild.GuildMessageReceivedEvent;
 import ta.util.IntCommand;
 
 import java.util.List;
-import java.util.Random;
 
 public class MemeCMD  implements IntCommand {
-
-    private final Random random;
-
-    public MemeCMD(Random random) {
-        this.random = random;
-    }
-
     @Override
   public void handle(List<String> args, GuildMessageReceivedEvent event) {
-        WebUtils.ins.getJSONObject("https://api.memeload.us/v1/random").async( (json) -> {
-
-                String image = json.getString("image");
-                MessageEmbed embed = EmbedUtils.embedImage(image).build();
-                //TODO: Make a permission check to see if the bot can send embeds if not, send plain text.
-                event.getChannel().sendMessage(embed).queue();
+        WebUtils.ins.getJSONObject("https://apis.duncte123.me/meme?nsfw=false").async( (json) -> {
+            JsonNode data = json.get("data");
+            String url = data.get("image").asText();
+            MessageEmbed embed = EmbedUtils.embedImage(url)
+                    .setTitle(data.get("title").asText(), data.get("url").asText())
+                    .build();
+            //TODO: Make a permissions check to see if the bot can send embeds if not, send plain text
+            event.getChannel().sendMessage(embed).queue();
             });
 
     }
@@ -40,4 +35,3 @@ public class MemeCMD  implements IntCommand {
     }
 }
 
- */

@@ -23,7 +23,7 @@ public class Bot {
 
     private Bot() throws IOException {
         Config config = new Config(new File("botconfig.json"));
-        CommandManager commandManager = new CommandManager(random);
+        CommandManager commandManager = new CommandManager();
         Listener listener = new Listener(commandManager);
         Logger logger = LoggerFactory.getLogger(Bot.class);
 
