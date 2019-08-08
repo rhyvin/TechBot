@@ -6,14 +6,12 @@ import java.util.regex.Pattern;
 
 
 import net.dv8tion.jda.core.events.message.guild.GuildMessageReceivedEvent;
+import net.dv8tion.jda.core.events.message.priv.PrivateMessageReceivedEvent;
 import org.jetbrains.annotations.NotNull;
-import ta.admin_commands.InstallCMD;
-import ta.admin_commands.UptimeCMD;
+import ta.admin_commands.*;
 import ta.commands.Moderation.RapSheetCMD;
-import ta.admin_commands.ServerInfoCMD;
 import ta.commands.HelpCMD;
 import ta.commands.Moderation.*;
-import ta.admin_commands.PingCMD;
 import ta.commands.Moderation.UserInfoCMD;
 import ta.commands.Fun.*;
 import ta.commands.audio.*;
@@ -23,12 +21,14 @@ public class CommandManager {
 
     private final Map<String, IntCommand> commands = new HashMap<>();
 
-    CommandManager(Random random) {
+    CommandManager() {
         //Fun Commands
         addCommand(new PingCMD());
         addCommand(new HelpCMD(this));
         addCommand(new M8ballCMD());
         addCommand(new CatCMD());
+        addCommand(new MemeCMD());
+        addCommand(new DogCMD());
 
         //Moderation commands
         addCommand(new UserInfoCMD());
@@ -89,6 +89,7 @@ public class CommandManager {
             }
         }
     }
+
     //TODO History/Rapsheet command.
     //TODO Roles on Join/leave
     //TODO Temp Ban

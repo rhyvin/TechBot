@@ -23,13 +23,12 @@ repositories {
 
 dependencies {
     compile "net.dv8tion:JDA:$jdaVersion"
-    compile "com.jagrosh:jda-utilities-commons:$jdaUVersion"
+    compile "com.jagrosh:jda-utilities:$jdaUVersion"
     compile "com.sedmelluq:lavaplayer:$lavaplay"
     compile "ch.qos.logback:logback-classic:$logBC"
     compile "club.minnced:discord-webhooks:$disWeb"
     compile "org.json:json:20180813"
     compile 'mysql:mysql-connector-java:5.1.+'
-    //compile "com.github.duncte123:botCommons:f4348d49b0"
     compile 'me.duncte123:botCommons:1.0.22'
 }
 

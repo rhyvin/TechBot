@@ -4,7 +4,6 @@ package ta.commands.audio;
 import com.sedmelluq.discord.lavaplayer.player.AudioPlayer;
 import com.sedmelluq.discord.lavaplayer.track.AudioTrackInfo;
 import me.duncte123.botcommons.messaging.EmbedUtils;
-import net.dv8tion.jda.core.entities.Message;
 import net.dv8tion.jda.core.entities.MessageEmbed;
 import net.dv8tion.jda.core.entities.TextChannel;
 import net.dv8tion.jda.core.events.message.guild.GuildMessageReceivedEvent;
@@ -12,7 +11,6 @@ import ta.music.GuildMusicManager;
 import ta.music.PlayerManager;
 import ta.util.IntCommand;
 
-import java.util.Calendar;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 

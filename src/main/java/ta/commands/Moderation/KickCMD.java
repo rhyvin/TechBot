@@ -1,12 +1,12 @@
 package ta.commands.Moderation;
 
+import net.dv8tion.jda.core.events.message.guild.GuildMessageReceivedEvent;
 import ta.Constants;
 import ta.config.Config;
 import ta.util.IntCommand;
 import net.dv8tion.jda.core.Permission;
 import net.dv8tion.jda.core.entities.Member;
 import net.dv8tion.jda.core.entities.TextChannel;
-import net.dv8tion.jda.core.events.message.guild.GuildMessageReceivedEvent;
 
 import java.io.File;
 import java.io.IOException;
