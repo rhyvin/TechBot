@@ -1,0 +1,12 @@
+#Ignore  gradle
+.gradle/
+gradlew
+gradlew.bat
+settings.gradle
+gradle/
+
+#Ignore idea folder
+.idea/
+
+
+
