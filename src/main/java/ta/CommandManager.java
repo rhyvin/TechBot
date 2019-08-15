@@ -29,6 +29,8 @@ public class CommandManager {
         addCommand(new CatCMD());
         addCommand(new MemeCMD());
         addCommand(new DogCMD());
+        addCommand(new DiceCMD());
+        //addCommand(new JokeCMD());
 
         //Moderation commands
         addCommand(new UserInfoCMD());

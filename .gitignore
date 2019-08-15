@@ -1,2 +1,12 @@
+#Ignore  gradle
+.gradle/
+gradlew
+gradlew.bat
+settings.gradle
+gradle/
 
-.idea/workspace.xml
+#Ignore idea folder
+.idea/
+
+
+
