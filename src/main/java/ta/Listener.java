@@ -99,7 +99,7 @@ class Listener extends ListenerAdapter {
 
 
 
-        List<Role> member = event.getGuild().getRolesByName("Member", false);
+        List<Role> member = event.getGuild().getRolesByName("Members", false);
         // Add role
         event.getGuild().modifyMemberRoles(event.getMember(), member).complete();
 
@@ -108,7 +108,7 @@ class Listener extends ListenerAdapter {
         {
             user.openPrivateChannel().queue((channel) ->
             {
-                channel.sendMessage("Welcome to the Techno Anomaly Discord Server "+ event.getMember().getUser().getName() + ", these are the rules. \n 🔅-No Spamming Messages \n 🔅-No Racist comments/images \n 🔅-Put messages in the apporpriate channels \n 🔅 -Respect Server staff \n 🔅 -Do not post files that could be malicious \n 🔅-Follow Discord TOS and overlyiung rules \n 🔅-Utilize @Everyone and @here sparingly and only as needed \n 🔅-Please refrain from Political and/or Religious discussions \n 🔅-Please no Advertizing of other Discord servers. \n Thank you, and I look forward to chatting with you! \n Rhyvin").queue();
+                channel.sendMessage("Welcome to the Techno Anomaly Discord Server "+ event.getMember().getUser().getName() + ", these are the rules. \n 🔅-No Spamming Messages \n 🔅-No Racist comments/images \n 🔅-Put messages in the appropriate channels \n 🔅 -Respect Server staff \n 🔅 -Do not post files that could be malicious \n 🔅-Follow Discord TOS and overlyiung rules \n 🔅-Utilize @Everyone and @here sparingly and only as needed \n 🔅-Please refrain from Political and/or Religious discussions \n 🔅-Please no Advertising of other Discord servers. \n Thank you, and I look forward to chatting with you! \n Rhyvin").queue();
             });
         }
     }
