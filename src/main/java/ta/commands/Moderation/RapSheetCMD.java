@@ -2,10 +2,10 @@ package ta.commands.Moderation;
 
 import com.jagrosh.jdautilities.commons.utils.FinderUtil;
 import me.duncte123.botcommons.messaging.EmbedUtils;
-import net.dv8tion.jda.core.entities.Member;
-import net.dv8tion.jda.core.entities.MessageEmbed;
-import net.dv8tion.jda.core.entities.User;
-import net.dv8tion.jda.core.events.message.guild.GuildMessageReceivedEvent;
+import net.dv8tion.jda.api.entities.Member;
+import net.dv8tion.jda.api.entities.MessageEmbed;
+import net.dv8tion.jda.api.entities.User;
+import net.dv8tion.jda.api.events.message.guild.GuildMessageReceivedEvent;
 import ta.Constants;
 import ta.config.Config;
 import ta.util.IntCommand;
@@ -146,7 +146,7 @@ public class RapSheetCMD implements IntCommand {
                             .addField("Mutes: " + mut, mmod+" "+rmute + mdatetime+"GMT", false)
                             .addField("Kicks: " + kik, kmod+" "+ rkik + kdatetime+"GMT", false)
                             .addField("Bans: " + ban, bmod+" "+ rban + bdatetime+"GMT", false)
-                            .addField("Joined Server: ", member.getJoinDate().format(DateTimeFormatter.RFC_1123_DATE_TIME), true)
+                            .addField("Joined Server: ", member.getTimeJoined().format(DateTimeFormatter.RFC_1123_DATE_TIME), true)
                             //.addField("Time Since Moderation: ", String.valueOf(latest), true)
                             .build();
 

@@ -1,7 +1,7 @@
 package ta.commands.audio;
 
-import net.dv8tion.jda.core.entities.TextChannel;
-import net.dv8tion.jda.core.events.message.guild.GuildMessageReceivedEvent;
+import net.dv8tion.jda.api.entities.TextChannel;
+import net.dv8tion.jda.api.events.message.guild.GuildMessageReceivedEvent;
 import ta.Constants;
 import ta.music.PlayerManager;
 import ta.util.IntCommand;

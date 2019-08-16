@@ -1,8 +1,9 @@
 package ta.admin_commands;
 
 
-import net.dv8tion.jda.core.Permission;
-import net.dv8tion.jda.core.events.message.guild.GuildMessageReceivedEvent;
+
+import net.dv8tion.jda.api.Permission;
+import net.dv8tion.jda.api.events.message.guild.GuildMessageReceivedEvent;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import ta.config.Config;
@@ -24,14 +25,14 @@ public class InstallCMD implements IntCommand {
         String guild = event.getGuild().getName();
 
         //Create Basic Roles
-        event.getGuild().getController().createRole().setName("Members").setColor(0x05920F).setPermissions(Permission.MESSAGE_READ, Permission.MESSAGE_HISTORY, Permission.CREATE_INSTANT_INVITE, Permission.NICKNAME_CHANGE, Permission.MESSAGE_WRITE, Permission.MESSAGE_TTS, Permission.MESSAGE_EMBED_LINKS, Permission.MESSAGE_ATTACH_FILES, Permission.MESSAGE_MENTION_EVERYONE, Permission.MESSAGE_EXT_EMOJI, Permission.MESSAGE_ADD_REACTION, Permission.VOICE_CONNECT, Permission.VOICE_SPEAK, Permission.VOICE_USE_VAD).setMentionable(false).queue();
+        event.getGuild().createRole().setName("Members").setColor(0x05920F).setPermissions(Permission.MESSAGE_READ, Permission.MESSAGE_HISTORY, Permission.CREATE_INSTANT_INVITE, Permission.NICKNAME_CHANGE, Permission.MESSAGE_WRITE, Permission.MESSAGE_TTS, Permission.MESSAGE_EMBED_LINKS, Permission.MESSAGE_ATTACH_FILES, Permission.MESSAGE_MENTION_EVERYONE, Permission.MESSAGE_EXT_EMOJI, Permission.MESSAGE_ADD_REACTION, Permission.VOICE_CONNECT, Permission.VOICE_SPEAK, Permission.VOICE_USE_VAD).setMentionable(false).queue();
         event.getChannel().sendMessage("Role Members created").queue();
 
-        event.getGuild().getController().createRole().setName("muted").setColor(0xBF0000).setPermissions(Permission.MESSAGE_READ, Permission.MESSAGE_HISTORY).setMentionable(false).setHoisted(true).queue();
-        event.getChannel().sendMessage("Role muted created").queue();
+        event.getGuild().createRole().setName("Muted").setColor(0xBF0000).setPermissions(Permission.MESSAGE_READ, Permission.MESSAGE_HISTORY).setMentionable(false).setHoisted(true).queue();
+        event.getChannel().sendMessage("Role Muted created").queue();
 
         //Create Basic Channels
-        event.getGuild().getController().createTextChannel("");
+        //TODO: Create basic channels on install
 
 
         //Create database for discord server defined by 'guild'

@@ -1,9 +1,9 @@
 package ta.commands.Moderation;
 
-import net.dv8tion.jda.core.Permission;
-import net.dv8tion.jda.core.entities.Member;
-import net.dv8tion.jda.core.entities.TextChannel;
-import net.dv8tion.jda.core.events.message.guild.GuildMessageReceivedEvent;
+import net.dv8tion.jda.api.Permission;
+import net.dv8tion.jda.api.entities.Member;
+import net.dv8tion.jda.api.entities.TextChannel;
+import net.dv8tion.jda.api.events.message.guild.GuildMessageReceivedEvent;
 import ta.Constants;
 
 import ta.config.Config;
@@ -45,7 +45,7 @@ public class BanCMD implements IntCommand {
         }
 
 
-        event.getGuild().getController().ban(target, 1)
+        event.getGuild().ban(target, 1)
                 .reason(String.format("Banned by: %#s, with reason: %s", event.getAuthor(), reason)).queue();
 
         channel.sendMessage("Success!").queue();

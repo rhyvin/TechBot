@@ -5,8 +5,7 @@ import java.util.*;
 import java.util.regex.Pattern;
 
 
-import net.dv8tion.jda.core.events.message.guild.GuildMessageReceivedEvent;
-import net.dv8tion.jda.core.events.message.priv.PrivateMessageReceivedEvent;
+import net.dv8tion.jda.api.events.message.guild.GuildMessageReceivedEvent;
 import org.jetbrains.annotations.NotNull;
 import ta.admin_commands.*;
 import ta.commands.Moderation.RapSheetCMD;

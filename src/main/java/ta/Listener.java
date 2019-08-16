@@ -1,18 +1,19 @@
 package ta;
 
-import net.dv8tion.jda.core.EmbedBuilder;
-import net.dv8tion.jda.core.JDA;
-import net.dv8tion.jda.core.entities.*;
-import net.dv8tion.jda.core.events.ReadyEvent;
-import net.dv8tion.jda.core.entities.User;
-import net.dv8tion.jda.core.events.guild.member.GuildMemberJoinEvent;
-import net.dv8tion.jda.core.events.guild.member.GuildMemberLeaveEvent;
-import net.dv8tion.jda.core.events.message.MessageReceivedEvent;
-import net.dv8tion.jda.core.events.message.guild.GuildMessageReceivedEvent;
-import net.dv8tion.jda.core.hooks.ListenerAdapter;
+import net.dv8tion.jda.api.EmbedBuilder;
+import net.dv8tion.jda.api.JDA;
+import net.dv8tion.jda.api.entities.*;
+import net.dv8tion.jda.api.events.ReadyEvent;
+import net.dv8tion.jda.api.entities.User;
+import net.dv8tion.jda.api.events.guild.member.GuildMemberJoinEvent;
+import net.dv8tion.jda.api.events.guild.member.GuildMemberLeaveEvent;
+import net.dv8tion.jda.api.events.message.MessageReceivedEvent;
+import net.dv8tion.jda.api.events.message.guild.GuildMessageReceivedEvent;
+import net.dv8tion.jda.api.hooks.ListenerAdapter;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import java.util.List;
 import java.util.Random;
 
 
@@ -30,11 +31,11 @@ class Listener extends ListenerAdapter {
     };
     String[] lmessages = {
             "[member]goes bye, bye.",
-            "l8r g8r",
+            "l8r g8r, [member] has left the server.",
             "May the force be with you [member].",
-            "Bye Felicia!",
+            "Bye Felicia! [member] has left the server.",
             "[member],really your leaving us? Rude.",
-            "[member] your mother was a hampster, and your father smelled of elderberries!"
+            "[member] your mother was a hamster, and your father smelled of elderberries!"
     };
 
     private final CommandManager manager;
@@ -81,6 +82,7 @@ class Listener extends ListenerAdapter {
 
         if(!event.getAuthor().isBot() && !event.getMessage().isWebhookMessage() && rw.startsWith(prefix)) {
             manager.handleCommand(event);
+
         }
     }
 
@@ -95,8 +97,11 @@ class Listener extends ListenerAdapter {
 
         event.getGuild().getDefaultChannel().sendMessage(join.build()).queue();
 
+
+
+        List<Role> member = event.getGuild().getRolesByName("Member", false);
         // Add role
-        event.getGuild().getController().addRolesToMember(event.getMember(), event.getGuild().getRolesByName("Member", true)).complete();
+        event.getGuild().modifyMemberRoles(event.getMember(), member).complete();
 
         //send private message
         User user = event.getMember().getUser();

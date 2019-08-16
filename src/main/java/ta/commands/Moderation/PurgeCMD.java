@@ -1,10 +1,10 @@
 package ta.commands.Moderation;
 
-import net.dv8tion.jda.core.Permission;
-import net.dv8tion.jda.core.entities.Member;
-import net.dv8tion.jda.core.entities.Message;
-import net.dv8tion.jda.core.entities.TextChannel;
-import net.dv8tion.jda.core.events.message.guild.GuildMessageReceivedEvent;
+import net.dv8tion.jda.api.Permission;
+import net.dv8tion.jda.api.entities.Member;
+import net.dv8tion.jda.api.entities.Message;
+import net.dv8tion.jda.api.entities.TextChannel;
+import net.dv8tion.jda.api.events.message.guild.GuildMessageReceivedEvent;
 import ta.Constants;
 import ta.util.IntCommand;
 
@@ -57,7 +57,7 @@ public class PurgeCMD implements IntCommand {
         }
 
         channel.getIterableHistory().takeAsync(amount).thenApplyAsync(messages -> {
-            List<Message> goodMessages = messages.stream().filter((m) -> !m.getCreationTime().isAfter(
+            List<Message> goodMessages = messages.stream().filter((m) -> !m.getTimeCreated().isAfter(
                     OffsetDateTime.now().plusWeeks(2))).collect(Collectors.toList());
 
             channel.purgeMessages(goodMessages);

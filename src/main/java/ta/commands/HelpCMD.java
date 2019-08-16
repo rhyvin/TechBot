@@ -1,8 +1,8 @@
 package ta.commands;
 
 import me.duncte123.botcommons.messaging.EmbedUtils;
-import net.dv8tion.jda.core.EmbedBuilder;
-import net.dv8tion.jda.core.events.message.guild.GuildMessageReceivedEvent;
+import net.dv8tion.jda.api.EmbedBuilder;
+import net.dv8tion.jda.api.events.message.guild.GuildMessageReceivedEvent;
 import ta.CommandManager;
 import ta.Constants;
 import ta.util.IntCommand;

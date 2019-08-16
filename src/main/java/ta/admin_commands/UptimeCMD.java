@@ -1,6 +1,6 @@
 package ta.admin_commands;
 
-import net.dv8tion.jda.core.events.message.guild.GuildMessageReceivedEvent;
+import net.dv8tion.jda.api.events.message.guild.GuildMessageReceivedEvent;
 import ta.util.IntCommand;
 
 import java.io.IOException;

@@ -1,12 +1,12 @@
 package ta.commands.Moderation;
 
-import net.dv8tion.jda.core.events.message.guild.GuildMessageReceivedEvent;
+import net.dv8tion.jda.api.events.message.guild.GuildMessageReceivedEvent;
 import ta.Constants;
 import ta.config.Config;
 import ta.util.IntCommand;
-import net.dv8tion.jda.core.Permission;
-import net.dv8tion.jda.core.entities.Member;
-import net.dv8tion.jda.core.entities.TextChannel;
+import net.dv8tion.jda.api.Permission;
+import net.dv8tion.jda.api.entities.Member;
+import net.dv8tion.jda.api.entities.TextChannel;
 
 import java.io.File;
 import java.io.IOException;
@@ -44,7 +44,7 @@ public class KickCMD implements IntCommand {
         }
 
 
-        event.getGuild().getController().kick(target, String.format("Kick by: %#s, with reason: %s",
+        event.getGuild().kick(target, String.format("Kick by: %#s, with reason: %s",
                 event.getAuthor(), reason)).queue();
 
         channel.sendMessage("Success!").queue();

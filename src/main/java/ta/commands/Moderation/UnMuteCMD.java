@@ -1,8 +1,8 @@
 package ta.commands.Moderation;
 
-import net.dv8tion.jda.core.Permission;
-import net.dv8tion.jda.core.entities.*;
-import net.dv8tion.jda.core.events.message.guild.GuildMessageReceivedEvent;
+import net.dv8tion.jda.api.Permission;
+import net.dv8tion.jda.api.entities.*;
+import net.dv8tion.jda.api.events.message.guild.GuildMessageReceivedEvent;
 import ta.Constants;
 import ta.util.IntCommand;
 
@@ -36,12 +36,13 @@ public class UnMuteCMD implements IntCommand {
             channel.sendMessage("I can't Unmute that user or I don't have the mute others permission permission").queue();
             return;
         }
+        else {
+            Role muted = event.getGuild().getRolesByName("Muted", true).get(0);
 
-        Role muted = event.getGuild().getRolesByName("Muted", true).get(0);
+            event.getGuild().removeRoleFromMember(mentionedMembers.get(0), muted).queue();
 
-        event.getGuild().getController().removeSingleRoleFromMember(target, muted).queue();
-
-        channel.sendMessage("Success!").queue();
+            channel.sendMessage("Success!").queue();
+        }
 
     }
 

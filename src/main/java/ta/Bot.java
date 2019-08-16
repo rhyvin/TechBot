@@ -2,9 +2,9 @@ package ta;
 
 import me.duncte123.botcommons.messaging.EmbedUtils;
 import me.duncte123.botcommons.web.WebUtils;
-import net.dv8tion.jda.bot.sharding.DefaultShardManagerBuilder;
-import net.dv8tion.jda.core.EmbedBuilder;
-import net.dv8tion.jda.core.entities.Game;
+import net.dv8tion.jda.api.entities.Activity;
+import net.dv8tion.jda.api.sharding.DefaultShardManagerBuilder;
+import net.dv8tion.jda.api.EmbedBuilder;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import ta.config.Config;
@@ -39,7 +39,7 @@ public class Bot {
             logger.info("Booting");
             new DefaultShardManagerBuilder()
                     .setToken(config.getString("token"))
-                    .setGame(Game.streaming("Follow TechnoAnomaly", "http://technoanomaly.com"))
+                    .setActivity(Activity.streaming("Follow TechnoAnomaly", "http://technoanomaly.com"))
                     .addEventListeners(listener)
                     .build();
             logger.info("Running");

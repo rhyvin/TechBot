@@ -1,10 +1,10 @@
 package ta.commands.Moderation;
 
-import net.dv8tion.jda.core.Permission;
-import net.dv8tion.jda.core.entities.Guild;
-import net.dv8tion.jda.core.entities.TextChannel;
-import net.dv8tion.jda.core.entities.User;
-import net.dv8tion.jda.core.events.message.guild.GuildMessageReceivedEvent;
+import net.dv8tion.jda.api.Permission;
+import net.dv8tion.jda.api.entities.Guild;
+import net.dv8tion.jda.api.entities.TextChannel;
+import net.dv8tion.jda.api.entities.User;
+import net.dv8tion.jda.api.events.message.guild.GuildMessageReceivedEvent;
 import ta.Constants;
 import ta.util.IntCommand;
 
@@ -34,7 +34,7 @@ public class UnBanCMD implements IntCommand {
 
         String argsJoined = String.join(" ", args);
 
-        event.getGuild().getBanList().queue((bans) -> {
+        event.getGuild().retrieveBanList().queue((bans) -> {
 
             List<User> goodUsers = bans.stream().filter((ban) -> isCorrectUser(ban, argsJoined))
                     .map(Guild.Ban::getUser).collect(Collectors.toList());
@@ -49,7 +49,7 @@ public class UnBanCMD implements IntCommand {
             String mod = String.format("%#s", event.getAuthor());
             String bannedUser = String.format("%#s", target);
 
-            event.getGuild().getController().unban(target)
+            event.getGuild().unban(target)
                     .reason("Unbanned By " + mod).queue();
 
             channel.sendMessage("User " + bannedUser + " unbanned.").queue();

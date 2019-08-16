@@ -1,9 +1,10 @@
 package ta.commands.Moderation;
 
-import net.dv8tion.jda.core.Permission;
-import net.dv8tion.jda.core.entities.Member;
-import net.dv8tion.jda.core.entities.TextChannel;
-import net.dv8tion.jda.core.events.message.guild.GuildMessageReceivedEvent;
+import net.dv8tion.jda.api.Permission;
+import net.dv8tion.jda.api.entities.Member;
+import net.dv8tion.jda.api.entities.Role;
+import net.dv8tion.jda.api.entities.TextChannel;
+import net.dv8tion.jda.api.events.message.guild.GuildMessageReceivedEvent;
 import ta.Constants;
 import ta.config.Config;
 import ta.util.IntCommand;
@@ -49,7 +50,7 @@ public class WarnCMD implements IntCommand {
         SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
         SimpleDateFormat stf = new SimpleDateFormat("HH:mm:ss");
         Date date = new Date(System.currentTimeMillis());
-        event.getGuild().getController().addRolesToMember(mentionedMembers.get(0), event.getGuild().getRolesByName("Muted", true)).queue();
+        event.getGuild().addRoleToMember(mentionedMembers.get(0), (Role) event.getGuild().getRolesByName("Muted", true)).queue();
         channel.sendMessage(String.format("Warned by: %#s, with reason: %s on, " + sdf.format(date) + " at " + stf.format(date) + ". ", event.getAuthor(), reason)).queue();
         Config config = new Config(new File("botconfig.json"));
         try {

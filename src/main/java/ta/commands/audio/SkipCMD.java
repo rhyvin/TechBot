@@ -1,8 +1,8 @@
 package ta.commands.audio;
 
 import com.sedmelluq.discord.lavaplayer.player.AudioPlayer;
-import net.dv8tion.jda.core.entities.TextChannel;
-import net.dv8tion.jda.core.events.message.guild.GuildMessageReceivedEvent;
+import net.dv8tion.jda.api.entities.TextChannel;
+import net.dv8tion.jda.api.events.message.guild.GuildMessageReceivedEvent;
 import ta.music.GuildMusicManager;
 import ta.music.PlayerManager;
 import ta.music.TrackScheduler;
